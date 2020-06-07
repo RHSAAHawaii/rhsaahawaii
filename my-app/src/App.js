@@ -8,6 +8,8 @@ import Landing from './pages/Landing';
 import About from './pages/About';
 import Error from './pages/Error';
 import Privacy from './pages/Privacy';
+import PresidentMessage from './pages/PresidentMessage';
+import Board from './pages/Board';
 
 class App extends Component {
   render() {
@@ -19,6 +21,8 @@ class App extends Component {
               <Route path="/" component={Landing} exact/>
               <Route path="/about" component={About}/>
               <Route path="/privacy" component={Privacy}/>
+              <Route path="/message" component={PresidentMessage}/>
+              <Route path="/board" component={Board}/>
               <Route component={Error}/>
             </Switch>
             <Footer />

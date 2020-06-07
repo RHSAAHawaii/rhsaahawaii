@@ -5,7 +5,7 @@ import '../style.css';
 class Privacy extends React.Component {
   render() {
     return (
-        <div className='footer'>
+        <div className='privacy'>
           <Segment>
             <Container>
               <Header>Privacy Policy</Header>
