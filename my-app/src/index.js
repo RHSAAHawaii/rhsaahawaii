@@ -10,14 +10,16 @@ class TopMenu extends React.Component {
   render() {
     return (
         <Menu borderless inverted>
-          <Menu.Item><Image src={srcRHSLogo} size='tiny'/></Menu.Item>
-          <Menu.Item>Events</Menu.Item>
-          <Menu.Item>Impact</Menu.Item>
-          <Menu.Item>Membership</Menu.Item>
-          <Menu.Item>Board</Menu.Item>
-          <Menu.Item>Events</Menu.Item>
-          <Menu.Item>Donate</Menu.Item>
-          <Menu.Item>Scholarships</Menu.Item>
+          <Container>
+            <Menu.Item><Image src={srcRHSLogo} size='mini'/></Menu.Item>
+            <Menu.Item>Events</Menu.Item>
+            <Menu.Item>Impact</Menu.Item>
+            <Menu.Item>Membership</Menu.Item>
+            <Menu.Item>Board</Menu.Item>
+            <Menu.Item>Events</Menu.Item>
+            <Menu.Item>Donate</Menu.Item>
+            <Menu.Item>Scholarships</Menu.Item>
+          </Container>
         </Menu>
     )
   }
@@ -26,16 +28,19 @@ class TopMenu extends React.Component {
 class RHSPicture extends React.Component {
   render() {
     return (
-        <Image fluid src={'http://rhsaahawaii.org/wp-content/uploads/2019/04/2-e1555871782433.jpg'}/>
+        <Container>
+          <Image fluid src={'http://rhsaahawaii.org/wp-content/uploads/2019/04/2-e1555871782433.jpg'}/>
+        </Container>
     )
   }
 }
 
 class MiddleContent extends React.Component {
   render() {
+    const segmentStyle = { margin: '5px 0 0 0', padding: '40px'};
     return (
-        <Segment>
-          <Container>
+        <Container>
+          <Segment style={segmentStyle} raised color='yellow'>
             The Roosevelt Alumni Foundation (RAF) raises funds to support our alma mater, President Theodore Roosevelt High School, in a variety of ways. These include offering annual scholarships to alumni. We also admit qualified applicants to the Roosevelt Hall of Fame. As a designated non-profit organization, donations to the RAF are tax deductible.
 
             <br/><br/>The Roosevelt High School Alumni Association (RHSAA) works toward developing a spirit of fellowship among its members in order to rekindle and strengthen ties to our alma mater and each other by publishing newsletters for its members and co-hosting with the RAF an annual ho’olaule’a – a get together for alumni.
@@ -43,8 +48,8 @@ class MiddleContent extends React.Component {
             <br/><br/>In addition to offering scholarships to RHS graduates, the RAF also provides support to Roosevelt High School by providing grants to support the school. Our projects include campus beautification and other needs. The RAF adopted the Friends of Roosevelt Project Grad (“FRPG”) in 2007. As the group’s fiscal sponsor, all donations to FRPG, are also tax deductible.
 
             <br/><br/>The purpose of the RAF’s scholarship program is to provide financial aid to graduates of Roosevelt High School who demonstrate ability, desire and have a financial need to pursue academic, trade or vocational school goals in Hawaii.
-          </Container>
-        </Segment>
+          </Segment>
+        </Container>
     )
   }
 }
@@ -52,7 +57,7 @@ class MiddleContent extends React.Component {
 class FullWidthImage extends React.Component {
   render() {
     return (
-        <div>
+        <div class='donate'>
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
             <input type="hidden" name="cmd" value="_donations" />
             <input type="hidden" name="business" value="rafhawaii@gmail.com" />
@@ -69,7 +74,7 @@ class FullWidthImage extends React.Component {
 class FooterMenu extends React.Component {
   render() {
     return (
-        <div class='footer'>
+        <div className='footer'>
           <Segment inverted >
             <Grid container>
               <Grid.Row centered>
