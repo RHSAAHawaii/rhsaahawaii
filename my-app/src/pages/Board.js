@@ -5,10 +5,11 @@ import ogawa from '../images/headshot-ogawa.jpg';
 
 class Board extends React.Component {
   render() {
+    const headerStyle = { fontSize: '40px', marginTop: '10px' };
     return (
         <div className='footer'>
           <Container>
-            <Header>Board</Header>
+            <Header style={headerStyle} textAlign='center' inverted>Meet the Board</Header>
             <Card.Group centered>
               <Card>
                 <Image src={ogawa} wrapped ui={false} />

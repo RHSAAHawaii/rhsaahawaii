@@ -5,11 +5,13 @@ import 'semantic-ui-css/semantic.min.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Landing from './pages/Landing';
-import About from './pages/About';
+import Impact from './pages/Impact';
 import Error from './pages/Error';
 import Privacy from './pages/Privacy';
 import PresidentMessage from './pages/PresidentMessage';
 import Board from './pages/Board';
+import Donate from './pages/Donate';
+import Scholarships from './pages/Scholarships';
 
 class App extends Component {
   render() {
@@ -19,10 +21,12 @@ class App extends Component {
             <NavBar />
             <Switch>
               <Route path="/" component={Landing} exact/>
-              <Route path="/about" component={About}/>
+              <Route path="/impact" component={Impact}/>
               <Route path="/privacy" component={Privacy}/>
               <Route path="/message" component={PresidentMessage}/>
               <Route path="/board" component={Board}/>
+              <Route path="/donate" component={Donate}/>
+              <Route path="/scholarships" component={Scholarships}/>
               <Route component={Error}/>
             </Switch>
             <Footer />

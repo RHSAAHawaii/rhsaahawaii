@@ -1,16 +1,16 @@
 import React from 'react';
 import { Header, Segment, Image } from 'semantic-ui-react';
-import '../style.css';
+import ogawa from '../images/headshot-ogawa.jpg';
 
 class PresidentMessage extends React.Component {
   render() {
     return (
-        <div>
-      <Segment>
-        <Header>Message from the President</Header>
-        <Image src={'../images/headshot-ogawa.jpg'} size='large'/>
-      </Segment>
-        </div>
+      <div>
+        <Segment>
+          <Header>Message from the President</Header>
+          <Image src={ogawa} size='large'/>
+        </Segment>
+      </div>
     )
   }
 }
