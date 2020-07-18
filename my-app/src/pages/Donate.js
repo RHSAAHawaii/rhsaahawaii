@@ -1,4 +1,5 @@
 import React from 'react';
+import { Form, Image, Segment } from 'semantic-ui-react';
 import '../style.css';
 
 class Donate extends React.Component {

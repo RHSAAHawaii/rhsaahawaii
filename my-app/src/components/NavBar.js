@@ -17,8 +17,8 @@ class NavBar extends React.Component {
               Roosevelt Alumni
             </Menu.Item>
             <Menu.Item as={NavLink} activeClassName="active" exact to='/impact' position='right' >Impact</Menu.Item>
-            <Menu.Item as={NavLink} exact to='/about'>Events</Menu.Item>
-            <Menu.Item as={NavLink} activeClassName="active" exact to='/impact' >Membership</Menu.Item>
+            <Menu.Item as={NavLink} exact to='/events'>Events</Menu.Item>
+            <Menu.Item as={NavLink} activeClassName="active" exact to='/members' >Membership</Menu.Item>
             <Menu.Item as={NavLink} activeClassName="active" exact to='/board'>Board</Menu.Item>
             <Menu.Item as={NavLink} activeClassName="active" exact to='/donate'>Donate</Menu.Item>
             <Menu.Item as={NavLink} activeClassName="active" exact to='/scholarships'>Scholarships</Menu.Item>
