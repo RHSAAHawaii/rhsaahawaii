@@ -12,6 +12,8 @@ import PresidentMessage from './pages/PresidentMessage';
 import Board from './pages/Board';
 import Donate from './pages/Donate';
 import Scholarships from './pages/Scholarships';
+import Events from './pages/Events';
+import Membership from './pages/Membership';
 
 class App extends Component {
   render() {
@@ -23,6 +25,8 @@ class App extends Component {
               <Route path="/" component={Landing} exact/>
               <Route path="/impact" component={Impact}/>
               <Route path="/privacy" component={Privacy}/>
+              <Route path="/events" component={Events}/>
+              <Route path="/members" component={Membership}/>
               <Route path="/message" component={PresidentMessage}/>
               <Route path="/board" component={Board}/>
               <Route path="/donate" component={Donate}/>

@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom';
 import '../style.css';
 import 'semantic-ui-css/semantic.min.css';
 import { Container, Image, Segment, Modal, Button, Header, Grid, Icon } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import rhsPhoto from '../images/landing2.jpg';
 import ogawa from '../images/headshot-ogawa.jpg';
 import test from '../images/rhsaa-logo-test.jpg';
 import projectGrad from '../images/projectgrad-temp.jpg';
 
 const srcRHSLogo = 'http://rhsaahawaii.org/wp-content/uploads/2019/04/cropped-logo2-2.png';
+const rhsaaPreview = 'https://www.freewebs.com/rhsaahawaii/2010.6.23%20Class%20of%201960%20RHS%20History%20Mural%20%283%29.jpg';
+const rafPreview = 'https://www.freewebs.com/rhsaahawaii/80th%20Anniversary%20-%20Gary%20Dymally%20157.jpg';
+const servicePreview = 'https://www.freewebs.com/rhsaahawaii/2010.6.23%20Class%20of%201960%20RHS%20History%20Mural.jpg';
 
 class Landing extends React.Component {
   state = { modalOpen: false }
@@ -41,15 +45,13 @@ class Landing extends React.Component {
                       open={this.state.modalOpen}
                       onClose={this.handleClose}
                   >
-                    <Modal.Header>Will you support the Rough Rider Ohana?</Modal.Header>
+                    <Modal.Header>Will you support our Rough Rider Ohana?</Modal.Header>
                     <Modal.Content image>
                       <Image wrapped size='medium' src={ogawa} />
                       <Modal.Description>
                         <Header>Make Riders Successful.</Header>
-                        <p>
-                          Your donation will directly impact RHS students and alumni. Help to set them up for success through our scholarships, campus improvement projects, and grants to support classrooms.
-                        </p>
-                        <p>Donations are handled via PayPal using the yellow donate button below.</p>
+                        <p>Your donation will directly impact RHS students and alumni. Help to set them up for success through our scholarships, campus improvement projects, and grants to support classrooms.</p>
+                        <p>Donations to RAF are processed via PayPal using the yellow donate button below.</p>
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                           <input type="hidden" name="cmd" value="_donations" />
                           <input type="hidden" name="business" value="rafhawaii@gmail.com" />
@@ -58,6 +60,9 @@ class Landing extends React.Component {
                           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                           <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
                         </form>
+                        <br/><p>All donations to RAF and FRPG are tax deductible.</p>
+                        Thank you for helping out a Rough Rider!
+                        <br/><br/><b>Garrett Ogawa</b> | RHSAA President
                       </Modal.Description>
                     </Modal.Content>
                     <Modal.Actions>
@@ -75,36 +80,37 @@ class Landing extends React.Component {
               <Container>
                 <Grid>
                   <Grid.Column width={4}>
-                    <Header color='red'>RHS Alumni Association</Header>
-                    <Image rounded src={projectGrad}/>
-                    <br/>The Roosevelt High School Alumni Association (RHSAA) works toward developing a spirit of fellowship among its members in order to rekindle and strengthen ties to our alma mater and each other by publishing newsletters for its members and co-hosting with the RAF an annual ho’olaule’a – a get together for alumni.
+                    <Header color='red'>Alumni Association</Header>
+                    <Image rounded src={rhsaaPreview}/>
+                    <br/><b>RHS Alumni Association (RHSAA)</b>
+                    <br/><a href='http://rhsaahawaii.org/'><b>http://rhsaahawaii.org/</b></a>
+                    <br/>RHSAA works toward developing a spirit of fellowship among its members in order to rekindle and strengthen ties to our alma mater and each other. We publish newsletters for our members and co-host, with the RAF, an annual ho’olaule’a – a get together for alumni.
                   </Grid.Column>
                   <Grid.Column width={4}>
                     <Header color='red'>Alumni Foundation</Header>
-                    <Image rounded src={projectGrad}/>
-                    <br/>The Roosevelt Alumni Foundation (RAF) raises funds to support our alma mater, President Theodore Roosevelt High School, in a variety of ways. These include offering annual scholarships to alumni. We also admit qualified applicants to the Roosevelt Hall of Fame. As a designated non-profit organization, donations to the RAF are tax deductible.
+                    <Image rounded src={rafPreview}/>
+                    <br/><b>Roosevelt Alumni Foundation (RAF)</b>
+                    <br/><a href='http://rhsaahawaii.org/'><b>http://rhsaahawaii.org/</b></a>
+                    <br/>RAF raises funds to support our alma mater, Roosevelt High School. Among various methods of support, we offer annual scholarships to alumni and admit qualified applicants to the Roosevelt Hall of Fame. As a designated non-profit organization, donations to the RAF are tax deductible.
                   </Grid.Column>
                   <Grid.Column width={4}>
                     <Header color='red'>School Support</Header>
-                    <Image rounded src={projectGrad}/>
+                    <Image rounded src={servicePreview}/>
+                    <br/><b>Scholarships and Service</b>
+                    <br/><a href='http://rhsaahawaii.org/scholarhips'><b>http://rhsaahawaii.org/scholarships</b></a>
+                    <br/> The RAF seeks to support to RHS graduates through scholarship opportunities and a strong alumni network. We also help the current students of Roosevelt High School through campus beautification projects and grants.
                   </Grid.Column>
                   <Grid.Column width={4}>
                     <Header color='red'>Friends of Project Grad</Header>
                     <Image rounded src={projectGrad}/>
+                    <br/><b>Friends of Roosevelt Project Grad (FRPG)</b>
+                    <br/><a href='https://www.rooseveltpg.org/'><b>https://www.rooseveltpg.org/</b></a>
+                    <br/>FRPG organizes an annual overnight event for graduating seniors. FRPG helps to keep seniors safe while continuing to provide a means for lasting memories.
                   </Grid.Column>
                 </Grid>
 
-              <br/><br/>In addition to offering scholarships to RHS graduates, the RAF also provides support to Roosevelt High School by providing grants to support the school. Our projects include campus beautification and other needs. The RAF adopted the Friends of Roosevelt Project Grad (“FRPG”) in 2007. As the group’s fiscal sponsor, all donations to FRPG, are also tax deductible.
+                <br/><br/> <b>Donations</b>: All donations to RAF and FRPG are tax deductible.
 
-               <br/><br/>The purpose of the RAF’s scholarship program is to provide financial aid to graduates of Roosevelt High School who demonstrate ability, desire and have a financial need to pursue academic, trade or vocational school goals in Hawaii.
-
-              <br/><br/>Roosevelt Alumni Foundation ("RAF")
-              <br/><br/>The RAF provides support to Roosevelt High School ("RHS") by offering scholarships to RHS graduates who attend schools in Hawaii, as well as providing grants to support the school in various ways, including campus beautification and other needs.  The RAF also adopted the Friends of Roosevelt Project Grad ("FRPG") in 2007.  As the group's fiscal sponsor, all donations to FRPG, are also tax deductible.
-
-              <br/><br/>Roosevelt High School Alumni Association ("RHSAA")
-              <br/><br/>The Roosevelt High School Alumni Association ("RHSAA") was originally chartered in 1975 as Rough Riders -  Hawaii.  In 1979, the name was officially changed to RHSAA.   In 1993, the Roosevelt Alumni Foundation ("RAF") was formed and obtained a non-profit designation - 501c(3), from the Internal Revenue Service in 1996, making all donations to the RAF tax deductible.
-
-              <br/><br/>If you want to subscribe to our newsletter or share information about your class/classmates, please download the membership application below and join the RHSAA.   E-mail your favorite memories at Roosevelt to our Newsletter Editor- Pualani Good '60 at: rhsaa.hawaii@gmail.com
                 </Container>
               </Segment>
 

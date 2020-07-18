@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Container, Card, Image } from 'semantic-ui-react';
+import { Header, Container, Card, Image, Segment } from 'semantic-ui-react';
 import '../style.css';
 import ogawa from '../images/headshot-ogawa.jpg';
 
@@ -8,8 +8,9 @@ class Board extends React.Component {
     const headerStyle = { fontSize: '40px', marginTop: '10px' };
     return (
         <div className='footer'>
+          <Header style={headerStyle} textAlign='center' inverted>Meet the Board</Header>
+          <Segment color='grey' inverted>
           <Container>
-            <Header style={headerStyle} textAlign='center' inverted>Meet the Board</Header>
             <Card.Group centered>
               <Card>
                 <Image src={ogawa} wrapped ui={false} />
@@ -167,6 +168,7 @@ class Board extends React.Component {
               </Card>
             </Card.Group>
           </Container>
+          </Segment>
         </div>
     )
   }
