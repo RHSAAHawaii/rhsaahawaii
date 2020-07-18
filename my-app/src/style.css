@@ -3,9 +3,9 @@ body {
 }
 
 .backgroundImage {
-  background: url(./images/landing.jpg) no-repeat center center fixed;
+  background: url(./images/landing2.jpg) no-repeat center center fixed;
   background-size: cover;
-  background-position: 0px -25px;
+  background-position: 0px -75px;
 }
 
 .ui.borderless.inverted.menu {
