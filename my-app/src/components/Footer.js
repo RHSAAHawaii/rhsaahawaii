@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Segment, Image, Container } from 'semantic-ui-react';
+import { Grid, Segment, Image } from 'semantic-ui-react';
 import '../style.css';
 
 const srcRHSLogo = 'http://rhsaahawaii.org/wp-content/uploads/2019/04/cropped-logo2-2.png';

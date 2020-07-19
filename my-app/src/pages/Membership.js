@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Header, Image, Segment } from 'semantic-ui-react';
+import { Header, Image, Segment } from 'semantic-ui-react';
 import '../style.css';
 
 const auditorium = 'https://www.freewebs.com/rhsaahawaii/House%20from%20stage.JPG'
