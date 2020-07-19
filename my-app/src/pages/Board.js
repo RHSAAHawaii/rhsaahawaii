@@ -9,7 +9,7 @@ class Board extends React.Component {
     return (
         <div className='footer'>
           <Header style={headerStyle} textAlign='center' inverted>Meet the Board</Header>
-          <Segment color='grey' inverted>
+          <Segment color='yellow'>
           <Container>
             <Card.Group centered>
               <Card>

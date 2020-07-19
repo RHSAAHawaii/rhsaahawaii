@@ -5,11 +5,12 @@ import scholarshipPhoto from '../images/scholarships-2012.jpg';
 
 class Scholarships extends React.Component {
   render() {
+    const headerStyle = { fontSize: '40px', marginTop: '10px' };
     return (
         <div>
+          <Header style={headerStyle} textAlign='center' inverted>Scholarships</Header>
           <Segment>
             <Container>
-              <Header>Scholarships for Roosevelt Graduates</Header>
               We seek to provide financial aid to graduates of Roosevelt High School who demonstrate the ability, desire, and have a financial need to be met in order to pursue academic, trade or vocational school goals.
               <Image src={scholarshipPhoto} size='large' centered rounded/>
               The Roosevelt Alumni Foundation has contributed over $70,000 in scholarships to both hard-working and need-based students (not necessarily determined by federal guidelines).

@@ -2,6 +2,8 @@ import React from 'react';
 import { Form, Header, Image, Segment } from 'semantic-ui-react';
 import '../style.css';
 
+const auditorium = 'https://www.freewebs.com/rhsaahawaii/House%20from%20stage.JPG'
+
 class Membership extends React.Component {
   render() {
     const headerStyle = { fontSize: '40px', marginTop: '10px' };
@@ -9,7 +11,7 @@ class Membership extends React.Component {
         <div className='membership'>
           <Header style={headerStyle} textAlign='center' inverted>Membership</Header>
           <Segment>
-            ayyy x2
+            <Image src={auditorium} size='large' centered/>
           </Segment>
         </div>
     )
