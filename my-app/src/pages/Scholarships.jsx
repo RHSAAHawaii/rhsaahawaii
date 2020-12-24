@@ -1,16 +1,17 @@
 import React from 'react';
-import { Header, Segment, Image, Container, List } from 'semantic-ui-react';
+import { Segment, Image, List } from 'semantic-ui-react';
 import '../style.css';
 import scholarshipPhoto from '../images/scholarships-2012.jpg';
-import { Accordion, Card, Button } from 'react-bootstrap';
+import { Accordion, Card, Button, Container } from 'react-bootstrap';
 
 class Scholarships extends React.Component {
   render() {
-    const headerStyle = { fontSize: '40px', marginTop: '10px' };
+    const headerStyle = { fontSize: '40px', marginTop: '10px', textAlign: 'center' };
+
     return (
         <div>
-          <Header style={headerStyle} textAlign='center' inverted>Scholarships</Header>
-          <Segment>
+          <h1 style={headerStyle}>Scholarships</h1>
+
             <Container>
               We seek to provide financial aid to graduates of Roosevelt High School who demonstrate the ability, desire,
               and have a financial need to be met in order to pursue academic, trade or vocational school goals.
@@ -21,7 +22,7 @@ class Scholarships extends React.Component {
               <p>In 2016, with the assistance of the Roosevelt Alumni Foundation, the Class of 1961 and the
                 Friends of Red & Gold, we awarded 10 scholarships for a total of $10,000!
               </p>
-              <Header>Scholarship Requirements</Header>
+              <h2>Scholarship Requirements</h2>
               <List bulleted>
                 <List.Item>To be a graduating student or graduate of Roosevelt High School</List.Item>
                 <List.Item>Submit evidence of acceptance into an accredited institution of higher learning.
@@ -29,7 +30,7 @@ class Scholarships extends React.Component {
                 </List.Item>
               </List>
 
-              <Header>Past Scholarship Winners</Header>
+              <h2>Past Scholarship Winners</h2>
               <Accordion defaultActiveKey="0">
                 <Card>
                   <Card.Header>
@@ -88,7 +89,7 @@ class Scholarships extends React.Component {
               </Accordion>
 
             </Container>
-          </Segment>
+          
         </div>
     )
   }
