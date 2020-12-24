@@ -1,5 +1,4 @@
 import React from 'react';
-import { Header } from 'semantic-ui-react';
 import { Container, Jumbotron, Button, Form, Accordion, Card } from 'react-bootstrap';
 import '../style.css';
 
@@ -13,7 +12,7 @@ class Donate extends React.Component {
             <h1>Donate and Make a Difference!</h1><br/>
             <h5>A simple gift can go a long way. </h5>
             <p>
-              Your investment will help our Rough Rider Ohana and make our community a better place.
+              Your investment in students will strengthen our Rough Rider Ohana and make our community a better place.
             </p>
             <p>
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
@@ -51,9 +50,9 @@ class Donate extends React.Component {
                 <Accordion.Collapse eventKey="2">
                   <Card.Body>
                     <ul>
-                        <li>Concrete Benches (Class of '63') - $9,678</li>
-                        <li>Eagle Scout Project - $400</li>
-                      </ul>
+                      <li>Concrete Benches (Class of '63') - $9,678</li>
+                      <li>Eagle Scout Project - $400</li>
+                    </ul>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -66,10 +65,10 @@ class Donate extends React.Component {
                 <Accordion.Collapse eventKey="3">
                   <Card.Body>
                     <ul>
-                        <li>Classroom Supplies - $12,803</li>
-                        <li>Theodore Roosevelt Bust (RAF Gift) - $6,530</li>
-                        <li>AED Institute of America (AEDs for RHS) - $3,720</li>
-                      </ul>
+                      <li>Classroom Supplies - $12,803</li>
+                      <li>Theodore Roosevelt Bust (RAF Gift) - $6,530</li>
+                      <li>AED Institute of America (AEDs for RHS) - $3,720</li>
+                    </ul>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -82,20 +81,20 @@ class Donate extends React.Component {
                 <Accordion.Collapse eventKey="4">
                   <Card.Body>
                     <ul>
-                        <li>Robotics Team - $7,000</li>
-                        <li>Golf Team - $6,000</li>
-                        <li>Creative Teens (Class of '57') - $5,495</li>
-                        <li>Football Team - $5,000</li>
-                        <li>RHS HOSA Group - $5,000</li>
-                        <li>Hiroshinma Student Exchange - $2,600</li>
-                        <li>HI Council on Economic Education - $1,900</li>
-                        <li>Relay For Life - $1,300</li>
-                        <li>Various Campus Events - $1,260</li>
-                        <li>Spirit Club - $1,000</li>
-                        <li>Music Boosters $300</li>
-                        <li>STEM - $200</li>
-                        <li>Graphic Design Class - $100</li>
-                      </ul>
+                      <li>Robotics Team - $7,000</li>
+                      <li>Golf Team - $6,000</li>
+                      <li>Creative Teens (Class of '57') - $5,495</li>
+                      <li>Football Team - $5,000</li>
+                      <li>RHS HOSA Group - $5,000</li>
+                      <li>Hiroshinma Student Exchange - $2,600</li>
+                      <li>HI Council on Economic Education - $1,900</li>
+                      <li>Relay For Life - $1,300</li>
+                      <li>Various Campus Events - $1,260</li>
+                      <li>Spirit Club - $1,000</li>
+                      <li>Music Boosters $300</li>
+                      <li>STEM - $200</li>
+                      <li>Graphic Design Class - $100</li>
+                    </ul>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
