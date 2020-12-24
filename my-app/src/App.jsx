@@ -31,6 +31,7 @@ class App extends Component {
               <Route path="/board" component={Board}/>
               <Route path="/donate" component={Donate}/>
               <Route path="/scholarships" component={Scholarships}/>
+              <Route path="/rhsaahawaii" component={Landing}/>
               <Route component={Error}/>
             </Switch>
             <Footer />
