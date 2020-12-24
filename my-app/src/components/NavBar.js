@@ -16,7 +16,7 @@ class NavBar extends React.Component {
     return (
         <Menu borderless inverted>
           <Container>
-            <Menu.Item as={NavLink} activeClassName="" exact to='/' style={titleStyle}>
+            <Menu.Item as={NavLink} activeClassName="" exact to='/rhsaahawaii' style={titleStyle}>
               <Image src={srcRHSLogo} size='mini'/>
               &nbsp;
               Roosevelt Alumni

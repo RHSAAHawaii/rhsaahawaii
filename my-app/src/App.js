@@ -21,7 +21,7 @@ class App extends Component {
           <div>
             <NavBar />
             <Switch>
-              <Route path="/" component={Landing} exact/>
+              <Route path="/rhsaahawaii" component={Landing} exact/>
               <Route path="/impact" component={Impact}/>
               <Route path="/privacy" component={Privacy}/>
               <Route path="/events" component={Events}/>
