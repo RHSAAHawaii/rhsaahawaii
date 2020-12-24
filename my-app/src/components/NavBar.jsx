@@ -18,11 +18,16 @@ class NavBar extends React.Component {
       <>
       <Container>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand>
+          <img alt="Roosevelt Logo" src={srcRHSLogo} width="30" height="30" 
+          className="d-inline-block align-top"
+          />
+          Roosevelt Alumni
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link as={NavLink} exact to='/impact'>Impact</Nav.Link>
           <Nav.Link href="#link">Link</Nav.Link>
           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
