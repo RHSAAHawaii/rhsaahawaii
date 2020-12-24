@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Jumbotron, Button, Form, Accordion, Card } from 'react-bootstrap';
+import { Container, Jumbotron, Button, Form, Accordion, Card, ListGroup } from 'react-bootstrap';
 import '../style.css';
 
 class Donate extends React.Component {
@@ -49,10 +49,8 @@ class Donate extends React.Component {
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
                   <Card.Body>
-                    <ul>
-                      <li>Concrete Benches (Class of '63') - $9,678</li>
-                      <li>Eagle Scout Project - $400</li>
-                    </ul>
+                    <ListGroup.Item>Concrete Benches (Class of '63') - $9,678</ListGroup.Item>
+                    <ListGroup.Item>Eagle Scout Project - $400</ListGroup.Item>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -63,12 +61,10 @@ class Donate extends React.Component {
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="3">
-                  <Card.Body>
-                    <ul>
-                      <li>Classroom Supplies - $12,803</li>
-                      <li>Theodore Roosevelt Bust (RAF Gift) - $6,530</li>
-                      <li>AED Institute of America (AEDs for RHS) - $3,720</li>
-                    </ul>
+                  <Card.Body as={ListGroup}>
+                    <ListGroup.Item>Classroom Supplies - $12,803</ListGroup.Item>
+                    <ListGroup.Item>Theodore Roosevelt Bust (RAF Gift) - $6,530</ListGroup.Item>
+                    <ListGroup.Item>AED Institute of America (AEDs for RHS) - $3,720</ListGroup.Item>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -79,22 +75,20 @@ class Donate extends React.Component {
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="4">
-                  <Card.Body>
-                    <ul>
-                      <li>Robotics Team - $7,000</li>
-                      <li>Golf Team - $6,000</li>
-                      <li>Creative Teens (Class of '57') - $5,495</li>
-                      <li>Football Team - $5,000</li>
-                      <li>RHS HOSA Group - $5,000</li>
-                      <li>Hiroshinma Student Exchange - $2,600</li>
-                      <li>HI Council on Economic Education - $1,900</li>
-                      <li>Relay For Life - $1,300</li>
-                      <li>Various Campus Events - $1,260</li>
-                      <li>Spirit Club - $1,000</li>
-                      <li>Music Boosters $300</li>
-                      <li>STEM - $200</li>
-                      <li>Graphic Design Class - $100</li>
-                    </ul>
+                  <Card.Body as={ListGroup}>
+                    <ListGroup.Item>Robotics Team - $7,000</ListGroup.Item>
+                    <ListGroup.Item>Golf Team - $6,000</ListGroup.Item>
+                    <ListGroup.Item>Creative Teens (Class of '57') - $5,495</ListGroup.Item>
+                    <ListGroup.Item>Football Team - $5,000</ListGroup.Item>
+                    <ListGroup.Item>RHS HOSA Group - $5,000</ListGroup.Item>
+                    <ListGroup.Item>Hiroshinma Student Exchange - $2,600</ListGroup.Item>
+                    <ListGroup.Item>HI Council on Economic Education - $1,900</ListGroup.Item>
+                    <ListGroup.Item>Relay For Life - $1,300</ListGroup.Item>
+                    <ListGroup.Item>Various Campus Events - $1,260</ListGroup.Item>
+                    <ListGroup.Item>Spirit Club - $1,000</ListGroup.Item>
+                    <ListGroup.Item>Music Boosters $300</ListGroup.Item>
+                    <ListGroup.Item>STEM - $200</ListGroup.Item>
+                    <ListGroup.Item>Graphic Design Class - $100</ListGroup.Item>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
