@@ -4,34 +4,29 @@ import '../style.css';
 
 class Donate extends React.Component {
   render() {
-    const headerStyle = { fontSize: '40px', marginTop: '10px' };
+    const jumbotronStyle = { textAlign: 'center' };
     return (
         <div class='donate'>
-           <h1><b>Donations</b></h1>
-          <Jumbotron> 
-            <h1>Donate and Make a Difference!</h1><br/>
-            <h5>A simple gift can go a long way. </h5>
-            <p>
-              Your investment in students will strengthen our Rough Rider Ohana and make our community a better place.
-            </p>
-            <p>
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" >
-              <input type="hidden" name="cmd" value="_donations" />
-              <input type="hidden" name="business" value="rafhawaii@gmail.com"/>
-              <input type="hidden" name="item_name" value="Roosevelt Alumni Association Donation" />
-              <input type="hidden" name="currency_code" value="USD" />
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"  name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-              </form>
-            </p>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" >
-              <Form.Control type="hidden" name="cmd" value="_donations" />
-              <Form.Control type="hidden" name="business" value="rafhawaii@gmail.com" />
-              <Form.Control type="hidden" name="item_name" value="Roosevelt Alumni Association Donation" />
-              <Form.Control type="hidden" name="currency_code" value="USD" />
-              <Form.Control type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"  name="submit" />
-            </form>
-          </Jumbotron>
+          <h1 className='impactHeader'><b>Donations</b></h1>
+          <div style={jumbotronStyle}>
+            <Jumbotron> 
+              <h1>Donate and Make a Difference!</h1>
+              <h5>A simple gift can go a long way. </h5>
+              <p>
+                Your investment in students will strengthen our Rough Rider Ohana and make our community a better place.
+              </p>
+              <p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" >
+                  <input type="hidden" name="cmd" value="_donations" />
+                  <input type="hidden" name="business" value="rafhawaii@gmail.com"/>
+                  <input type="hidden" name="item_name" value="Roosevelt Alumni Association Donation" />
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"  name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+              </p>
+            </Jumbotron>
+          </div>
           <Container>
             <Accordion defaultActiveKey="0">
               <Card>
@@ -39,6 +34,7 @@ class Donate extends React.Component {
                   <Accordion.Toggle as={Button} variant="link" eventKey="0">
                     Scholarships - $73,100
                   </Accordion.Toggle>
+                  
                 </Card.Header>
               </Card>
               <Card>
