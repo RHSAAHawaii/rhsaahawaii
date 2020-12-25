@@ -9,6 +9,7 @@
 .ui.borderless.inverted.menu {
   box-shadow: none;
   border-radius: 0;
+
 }
 
 .donate {
@@ -24,4 +25,26 @@
 
 .footerText{
   margin-bottom: 0 ;
+}
+
+.impact {
+  margin-bottom: 3em;
+}
+
+.impactHeader{
+  font-size: 3em;
+  margin-bottom: 1em;
+  margin-top: 1em !important;
+  margin-left: 2em;
+}
+
+
+.impactContent{
+  /** background-color: #f8f9fa; **/
+  margin-bottom: 1em;
+  margin-top: 1em !important;
+  margin-left: 4em;
+  margin-right: 24em;
+  font-size: 1.5em;
+
 }
