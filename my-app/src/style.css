@@ -8,12 +8,6 @@ body{
 
 }
 
-.ui.borderless.inverted.menu {
-  box-shadow: none;
-  border-radius: 0;
-
-}
-
 .donate {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -22,6 +16,7 @@ body{
 
 #footer{
   background-color: #cb0713;
+  border-top: 5px solid #f8b416;
 }
 
 .footerText{
