@@ -2,12 +2,19 @@ import React from 'react';
 import { Container, Jumbotron, Button, Form, Accordion, Card, ListGroup } from 'react-bootstrap';
 import '../style.css';
 
-class Donate extends React.Component {
+class DonateTitle extends React.Component {
+  render(){
+    return (
+      <h1 className='impactHeader'> Donations</h1>
+    )
+  }
+}
+
+class DonateContent extends React.Component {
   render() {
     const jumbotronStyle = { textAlign: 'center' };
     return (
         <div class='donate'>
-          <h1 className='impactHeader'><b>Donations</b></h1>
           <div style={jumbotronStyle}>
             <Jumbotron> 
               <h1>Donate and Make a Difference!</h1>
@@ -99,6 +106,19 @@ class Donate extends React.Component {
           </Container>
         </div>
     )
+  }
+}
+
+class Donate extends React.Component {
+  render() {
+
+    return (
+        <div>
+          <DonateTitle/>
+          <DonateContent/>
+        </div>
+
+    );
   }
 }
 
