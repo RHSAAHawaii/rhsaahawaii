@@ -38,13 +38,20 @@
   margin-left: 2em;
 }
 
-
-.impactContent{
+.impactContent {
   /** background-color: #f8f9fa; **/
   margin-bottom: 1em;
   margin-top: 1em !important;
   margin-left: 4em;
   margin-right: 24em;
   font-size: 1.5em;
+}
 
+.impactContent2{
+  margin-bottom: -0.5em;
+  margin-top: 1.2em !important;
+  margin-left: 3em;
+  margin-right: 24em;
+  font-size: 2em;
+  color: #cb0713;
 }
