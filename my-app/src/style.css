@@ -1,4 +1,6 @@
-
+body{
+  font-family: "Sofia", sans-serif;
+}
 .backgroundImage {
   background: url(./images/landing2.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -27,6 +29,20 @@
   margin-bottom: 0 ;
 }
 
+
+.whiteText{
+  color: whitesmoke !important;
+}
+
+#navBar{
+  color: #cb0713;
+  border-bottom: 5px solid #f8b416;
+}
+
+.navBarFontSize{
+  font-size: 22;
+  font-family: "Sofia", sans-serif !important;
+=======
 .impact {
   margin-bottom: 3em;
 }
@@ -54,4 +70,5 @@
   margin-right: 24em;
   font-size: 2em;
   color: #cb0713;
+
 }
