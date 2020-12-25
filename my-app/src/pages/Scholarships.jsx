@@ -1,11 +1,12 @@
 import React from 'react';
 import '../style.css';
 import scholarshipPhoto from '../images/scholarships-2012.jpg';
-import { Accordion, Card, Button, Container, Image, Figure, Row, Col } from 'react-bootstrap';
+import { Accordion, Card, Button, Container, Image, Figure, Row, Col, DropdownButton } from 'react-bootstrap';
 
 class Scholarships extends React.Component {
   render() {
-    const headerStyle = { fontSize: '40px', marginTop: '10px', textAlign: 'center' };
+    const headerStyle = { fontSize: '40px', marginTop: '10px', textAlign: 'center', padding: '30px' };
+    const descript = {};
 
     return (
         <div>
