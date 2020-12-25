@@ -15,7 +15,7 @@ class NavBar extends React.Component {
           width="30"
           height="30"
           style={{marginLeft:10}}
-          className="d-inline-block align-top"
+          className="d-inline-block align-top ImgOpa"
           />
           {' '}Roosevelt Alumni
         </Navbar.Brand>

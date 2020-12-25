@@ -2,12 +2,16 @@ import React from 'react';
 import { Header, Container, Card, Image, Segment } from 'semantic-ui-react';
 import '../style.css';
 import ogawa from '../images/headshot-ogawa.jpg';
+import BoardCard from '../components/BoardCard';
+import { _ } from 'underscore';
 
 class Board extends React.Component {
   render() {
     const headerStyle = { fontSize: '40px', marginTop: '10px' };
     return (
-        <div className='footer'>
+
+        <div>
+          { /**_.map(boardJson, (current, index) => <BoardCard key={index} /> )*/}
           <Header style={headerStyle} textAlign='center' inverted>Meet the Board</Header>
           <Segment color='yellow'>
           <Container>
