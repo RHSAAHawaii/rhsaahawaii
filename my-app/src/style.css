@@ -50,9 +50,14 @@ body{
 
 .impactHeader{
   font-size: 3em;
-  margin-bottom: 1em;
-  margin-top: 1em !important;
+  margin-bottom: .5em;
+  margin-top: .5em !important;
   margin-left: 2em;
+}
+
+.impactHeaderBackground{
+  margin-top: 0em;
+  background-color: #f8f9fa;
 }
 
 .impactContent {
@@ -71,5 +76,4 @@ body{
   margin-right: 24em;
   font-size: 2em;
   color: #cb0713;
-
 }

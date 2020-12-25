@@ -5,7 +5,12 @@ import RooseveltFront from '../images/RooseveltFront.jpg';
 class ImpactTitle extends React.Component {
   render(){
     return (
+        <div className='impactHeaderBackground'>
+          <br></br>
       <h1 className='impactHeader'> About Roosevelt Alumni Foundation</h1>
+          <br></br>
+        </div>
+
     )
   }
 }
@@ -20,7 +25,7 @@ class ImpactContent extends React.Component {
             </p>
 
             <div className='impactContent'>
-              <img width={1000} height={540} src={RooseveltFront} alt='image'/>
+              <img width={1000} height={540} src={RooseveltFront} alt='image'className="rounded mb-0"/>
             </div>
 
             <h2 className='impactContent2'>Fellowship</h2>
