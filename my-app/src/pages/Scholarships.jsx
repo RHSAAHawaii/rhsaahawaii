@@ -1,20 +1,31 @@
 import React from 'react';
 import '../style.css';
 import scholarshipPhoto from '../images/scholarships-2012.jpg';
-import { Accordion, Card, Button, Container, Image, Figure, Row, Col, DropdownButton } from 'react-bootstrap';
+import {
+  Accordion,
+  Card,
+  Button,
+  Container,
+  Image,
+  Figure,
+  Row,
+  Col,
+  DropdownButton,
+  Jumbotron
+} from 'react-bootstrap';
 
 class Scholarships extends React.Component {
   render() {
     const headerStyle = { fontSize: '40px', marginTop: '10px', textAlign: 'center', padding: '30px' };
-    const descript = {};
 
     return (
         <div>
           <h1 style={headerStyle}>Scholarships</h1>
           <Container>
+            <Jumbotron>
             <Row>
-              <Col><Image width={400} height={300} src={scholarshipPhoto}/></Col>
-              <Col><p>We seek to provide financial aid to graduates of Roosevelt High School who demonstrate the ability, desire,
+              <Col><Image rounded width={400} height={300} src={scholarshipPhoto}/></Col>
+              <Col><p style={{fontSize: "15px", verticalAlign: "center"}}>We seek to provide financial aid to graduates of Roosevelt High School who demonstrate the ability, desire,
                 and have a financial need to be met in order to pursue academic, trade or vocational school goals.
                 The Roosevelt Alumni Foundation has contributed over $70,000 in scholarships to both hard-working and
                 need-based students (not necessarily determined by federal guidelines).
@@ -22,20 +33,18 @@ class Scholarships extends React.Component {
                 Friends of Red & Gold, we awarded 10 scholarships for a total of $10,000!
               </p></Col>
             </Row>
-
-            <Row>
-
-            </Row>
-
-            <h2>Scholarship Requirements</h2>
+            <br/>
+            <h2 style={{marginTop: "50px"}}>Scholarship Requirements</h2>
             <ul>
+              <li>Be cool</li>
+              <li>Stay in school</li>
               <li>To be a graduating student or graduate of Roosevelt High School</li>
               <li>Submit evidence of acceptance into an accredited institution of higher learning.
                 This includes institutions that offer courses for study of a trade of a trade or vocation.
               </li>
             </ul>
 
-            <h2>Past Scholarship Winners</h2>
+            <h2 style={{marginTop: "50px"}}>Past Scholarship Winners</h2>
             <Accordion defaultActiveKey="0">
               <Card>
                 <Card.Header>
@@ -92,6 +101,7 @@ class Scholarships extends React.Component {
                 </Accordion.Collapse>
               </Card>
             </Accordion>
+            </Jumbotron>
           </Container>
         </div>
     )
