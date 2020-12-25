@@ -9,7 +9,7 @@ class Board extends React.Component {
     return (
         <Container>
           <CardDeck>
-          {boardJson.map( (current, index) => <BoardCard key={index} boardInfo={current} /> ) }
+          {boardJson.map( (current, index) => <BoardCard key={index} boardInfo={current}/>)}
           </CardDeck>
         </Container>
     )
