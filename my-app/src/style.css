@@ -8,12 +8,6 @@ body{
 
 }
 
-.ui.borderless.inverted.menu {
-  box-shadow: none;
-  border-radius: 0;
-
-}
-
 .donate {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -22,6 +16,7 @@ body{
 
 #footer{
   background-color: #cb0713;
+  border-top: 5px solid #f8b416;
 }
 
 .footerText{
@@ -39,7 +34,7 @@ body{
 }
 
 .navBarFontSize{
-  font-size: 22;
+  font-size: 22px;
   font-family: "Sofia", sans-serif !important;
 }
 
@@ -49,18 +44,31 @@ body{
 
 .impactHeader{
   font-size: 3em;
-  margin-bottom: 1em;
-  margin-top: 1em !important;
+  margin-bottom: .5em;
+  margin-top: .5em !important;
   margin-left: 2em;
+  color: #cb0713;
+}
+
+.impactFooter{
+  font-size: 3em;
+  margin-bottom: .5em;
+  margin-top: .5em !important;
+  margin-left: 25em;
+  color: #cb0713;
+}
+
+.impactHeaderBackground{
+  background-color: #f8f9fa;
 }
 
 .impactContent {
-  /** background-color: #f8f9fa; **/
   margin-bottom: 1em;
   margin-top: 1em !important;
-  margin-left: 4em;
-  margin-right: 24em;
-  font-size: 1.5em;
+  margin-left: 3em;
+  margin-right: 18em;
+  font-size: 2em;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .impactContent2{
@@ -70,5 +78,13 @@ body{
   margin-right: 24em;
   font-size: 2em;
   color: #cb0713;
+}
 
+.impactDonationImage{
+  display: block;
+  margin-left: auto;
+  margin-right: 5em;
+  margin-top: -7em;
+  padding-bottom: 2em;
+  width: 10%;
 }

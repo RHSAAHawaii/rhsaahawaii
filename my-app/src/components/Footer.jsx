@@ -11,7 +11,7 @@ class Footer extends React.Component {
         <Row className="justify-content-md-center">
 
           <Col className='col-5 text-right'>
-            <Image src={srcRHSLogo} width='100' height='100'/>
+            <Image src={'https://media.discordapp.net/attachments/755318856917975061/792002521379635200/logo_seal.png'} width='100' height='120'/>
           </Col>
 
           <Col className='text-light'>

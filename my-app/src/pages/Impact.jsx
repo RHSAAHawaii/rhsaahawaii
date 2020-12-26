@@ -5,7 +5,12 @@ import RooseveltFront from '../images/RooseveltFront.jpg';
 class ImpactTitle extends React.Component {
   render(){
     return (
+        <div className='impactHeaderBackground'>
+          <br/>
       <h1 className='impactHeader'> About Roosevelt Alumni Foundation</h1>
+          <br/>
+        </div>
+
     )
   }
 }
@@ -20,7 +25,7 @@ class ImpactContent extends React.Component {
             </p>
 
             <div className='impactContent'>
-              <img width={1000} height={540} src={RooseveltFront} alt='image'/>
+              <img width={1000} height={540} src={RooseveltFront} alt='image' className="rounded mb-0"/>
             </div>
 
             <h2 className='impactContent2'>Fellowship</h2>
@@ -52,13 +57,31 @@ class ImpactContent extends React.Component {
   }
 }
 
+class ImpactDonation extends React.Component {
+  render() {
+    return(
+
+        <div className='impactHeaderBackground'>
+          <br/>
+          <h1 className='impactFooter'> Sponsor or Donate</h1>
+          <br/>
+          <a href='https://www.paypal.com/donate/?cHJwPXJwdA='>
+            <img className="impactDonationImage" src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif' alt='donateImage'/>
+          </a>
+        </div>
+
+    )
+  }
+}
+
 class Impact extends React.Component {
   render() {
-
     return (
+
         <div>
           <ImpactTitle/>
           <ImpactContent/>
+          <ImpactDonation/>
         </div>
 
     );
