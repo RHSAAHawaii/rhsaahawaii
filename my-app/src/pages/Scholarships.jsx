@@ -7,34 +7,39 @@ import {
   Button,
   Container,
   Image,
-  Figure,
   Row,
   Col,
-  DropdownButton,
   Jumbotron
 } from 'react-bootstrap';
 
 class Scholarships extends React.Component {
   render() {
-    const headerStyle = { fontSize: '40px', marginTop: '10px', textAlign: 'center', padding: '30px' };
+
 
     return (
         <div>
-          <h1 style={headerStyle}>Scholarships</h1>
+          <h1 className="impactHeader">Scholarships</h1>
+          <Jumbotron>
+            <Container>
+              <Row>
+                <Col><Image rounded width={400} height={300} src={scholarshipPhoto}/></Col>
+                <Col>
+                  <p>We seek to provide financial aid to
+                    graduates of Roosevelt High School
+                    who demonstrate the ability, desire,
+                    and have a financial need to be met in order to pursue academic, trade or vocational
+                    school goals. The Roosevelt Alumni Foundation has contributed over $70,000 in
+                    scholarships to both hard-working and
+                    need-based students (not necessarily determined by federal guidelines).
+                    In 2016, with the assistance of the Roosevelt Alumni Foundation,
+                    the Class of 1961 and the Friends of Red & Gold, we
+                    awarded 10 scholarships for a total of $10,000!
+                  </p></Col>
+              </Row>
+            </Container>
+          </Jumbotron>
           <Container>
-            <Jumbotron>
-            <Row>
-              <Col><Image rounded width={400} height={300} src={scholarshipPhoto}/></Col>
-              <Col><p style={{fontSize: "15px", verticalAlign: "center"}}>We seek to provide financial aid to graduates of Roosevelt High School who demonstrate the ability, desire,
-                and have a financial need to be met in order to pursue academic, trade or vocational school goals.
-                The Roosevelt Alumni Foundation has contributed over $70,000 in scholarships to both hard-working and
-                need-based students (not necessarily determined by federal guidelines).
-                In 2016, with the assistance of the Roosevelt Alumni Foundation, the Class of 1961 and the
-                Friends of Red & Gold, we awarded 10 scholarships for a total of $10,000!
-              </p></Col>
-            </Row>
-            <br/>
-            <h2 style={{marginTop: "50px"}}>Scholarship Requirements</h2>
+            <h2 style={{ marginTop: "50px" }}>Scholarship Requirements</h2>
             <ul>
               <li>Be cool</li>
               <li>Stay in school</li>
@@ -44,7 +49,7 @@ class Scholarships extends React.Component {
               </li>
             </ul>
 
-            <h2 style={{marginTop: "50px"}}>Past Scholarship Winners</h2>
+            <h2 style={{ marginTop: "50px" }}>Past Scholarship Winners</h2>
             <Accordion defaultActiveKey="0">
               <Card>
                 <Card.Header>
@@ -101,7 +106,6 @@ class Scholarships extends React.Component {
                 </Accordion.Collapse>
               </Card>
             </Accordion>
-            </Jumbotron>
           </Container>
         </div>
     )
