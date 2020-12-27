@@ -56,6 +56,9 @@ class Scholarships extends React.Component {
 
             {/*I DONT KNOW HOW TO USE THE COMPONENT TO RENDER ALL THE STUFF FOR THE ACCORDION HELP PLEASE */}
             {/*{scholars.map((current, index) => <Accordions key={index} item={current}/>)}*/}
+            {/** Maybe _.sortby(scholar, 'year') and make a dynamic accordion toggle for each year that exists?
+             * idk I will try look into this - Jun Ho
+             */}
 
             <Accordion defaultActiveKey="0">
 
