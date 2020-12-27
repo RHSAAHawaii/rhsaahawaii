@@ -1,6 +1,9 @@
 import React from 'react';
 import '../style.css';
 import scholarshipPhoto from '../images/scholarships-2012.jpg';
+import scholars from '../data/scholars.json'
+import _ from 'underscore/underscore-esm';
+
 import {
   Accordion,
   Card,
@@ -11,10 +14,11 @@ import {
   Col,
   Jumbotron
 } from 'react-bootstrap';
+// import Accordions from '../components/Accordions';
 
 class Scholarships extends React.Component {
-  render() {
 
+  render() {
 
     return (
         <div>
@@ -48,63 +52,73 @@ class Scholarships extends React.Component {
                 This includes institutions that offer courses for study of a trade of a trade or vocation.
               </li>
             </ul>
-
             <h2 style={{ marginTop: "50px" }}>Past Scholarship Winners</h2>
+
+            {/*I DONT KNOW HOW TO USE THE COMPONENT TO RENDER ALL THE STUFF FOR THE ACCORDION HELP PLEASE */}
+            {/*{scholars.map((current, index) => <Accordions key={index} item={current}/>)}*/}
+
             <Accordion defaultActiveKey="0">
+
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                    2016 RAF Scholarship Winners
-                  </Accordion.Toggle>
+                  <Accordion.Toggle as={Button} variant="link" eventKey="0">2020</Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">
                   <Card.Body>
                     <ul>
-                      <li>Yuwen Hu, $1,000 University of San Francisco</li>
-                      <li>Arong Lee, $1,000 Whitman College</li>
-                      <li>Kevin Liu, $1,000 University of Hawaii, Manoa</li>
-                      <li>Xiaofei Mai, $1,000 University of Hawaii, Manoa</li>
-                      <li>Gha Ming Ng, $1,000 Western Oregon University</li>
-                      <li>Kim Yen Nguyen, $1,000 University of Hawaii, Manoa</li>
-                      <li>Itsuka Nomi, $1,000 University of Hawaii, Manoa</li>
-                      <li>Yingyin Pang, $1,000 University of Hawaii, Manoa</li>
-                      <li>Rachelle Anne Silao, $1,000 Chaminade University</li>
-                      <li>Lynda Valen, $1,000 University of Hawaii, Manoa</li>
+                      {scholars.filter(scholar => scholar.Class === 2020).map((scholar) => (<li>
+                        {scholar.firstName} {scholar.lastName}, {scholar.Amount}, {scholar.College}
+                        </li>))}
                     </ul>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
+
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                    2015 Class of '62 and Class of '64
-                  </Accordion.Toggle>
+                  <Accordion.Toggle as={Button} variant="link" eventKey="1">2019</Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="1">
                   <Card.Body>
                     <ul>
-                      <li>Joanne Huang, $1,000, Lehigh University</li>
-                      <li>Chin Huynh, $1,000, Gonzaga University</li>
-                      <li>Kaohi Kapiko, $1,000,Gonzaga University</li>
-                      <li>Kristen Kaulia, $1,500, Eastern Washington University</li>
-                      <li>Jake Kawasaki, $1,000, Santa Clara University</li>
-                      <li>Tammy Ko, $1,000, University of Southern California</li>
-                      <li>Kristen Kojima, $1,000, Creighton University</li>
-                      <li>Colleen Lau, $1,000, University of Hawaii, Manoa</li>
-                      <li>Alicia Leong, $1,000, University of Hawaii, Manoa</li>
-                      <li>Jason Lin, $1,000, American University</li>
-                      <li>Aaron Miyasato, $1,000, University of Washington</li>
-                      <li>Brenda Nguyen, $1,000, University of Hawaii, Manoa</li>
-                      <li>Stephen Radkov, $500, Honolulu Community College</li>
-                      <li>Germiniano Sarmiento III, $1,000, Willamette University</li>
-                      <li>Kai Tsubota, $1,500, Whitman University</li>
-                      <li>Connie Wong, $1,000, University of Hawaii, Manoa</li>
-                      <li>Yanna Xian, $1,000, Creighton University</li>
-                      <li>Hinman Zhou, $1,100, Creighton University</li>
+                      {scholars.filter(scholar => scholar.Class === 2019).map((scholar) => (<li>
+                        {scholar.firstName} {scholar.lastName}, {scholar.Amount}, {scholar.College}
+                      </li>))}
                     </ul>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
+
+              <Card>
+                <Card.Header>
+                  <Accordion.Toggle as={Button} variant="link" eventKey="2">2018</Accordion.Toggle>
+                </Card.Header>
+                <Accordion.Collapse eventKey="2">
+                  <Card.Body>
+                    <ul>
+                      {scholars.filter(scholar => scholar.Class === 2018).map((scholar) => (<li>
+                        {scholar.firstName} {scholar.lastName}, {scholar.Amount} ({scholar.Scholarship}), {scholar.College}
+                      </li>))}
+                    </ul>
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+
+              <Card>
+                <Card.Header>
+                  <Accordion.Toggle as={Button} variant="link" eventKey="3">2017</Accordion.Toggle>
+                </Card.Header>
+                <Accordion.Collapse eventKey="3">
+                  <Card.Body>
+                    <ul>
+                      {scholars.filter(scholar => scholar.Class === 2013).map((scholar) => (<li>
+                        {scholar.firstName} {scholar.lastName}, {scholar.Amount}, {scholar.College}
+                      </li>))}
+                    </ul>
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+
             </Accordion>
           </Container>
         </div>
