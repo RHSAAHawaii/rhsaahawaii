@@ -21,7 +21,7 @@ class NavBar extends React.Component {
         <Nav className='ml-auto' style={{fontSize: 22}}>
           <Nav.Link className='whiteText' as={NavLink} exact to='/impact'>Impact</Nav.Link>
           <Nav.Link className='whiteText' as={NavLink} exact to='/events'>Events</Nav.Link>
-          <Nav.Link className='whiteText' as={NavLink} exact to='/members'>Members</Nav.Link>
+          <Nav.Link className='whiteText' as={NavLink} exact to='/members'>Membership</Nav.Link>
           <Nav.Link className='whiteText' as={NavLink} exact to='/board'>Board</Nav.Link>
           <Nav.Link className='whiteText' as={NavLink} exact to='/donate'>Donate</Nav.Link>
           <Nav.Link className='whiteText' as={NavLink} exact to='/scholarships'>Scholarships</Nav.Link>
