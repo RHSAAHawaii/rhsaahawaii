@@ -17,8 +17,6 @@ class NavBar extends React.Component {
         </Navbar.Brand>
         <Navbar.Toggle bg='light' aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-        <Nav>
-        </Nav>
 
         <Nav className='ml-auto' style={{fontSize: 22}}>
           <Nav.Link className='whiteText' as={NavLink} exact to='/impact'>Impact</Nav.Link>
