@@ -15,7 +15,7 @@ class NavBar extends React.Component {
           />
           Roosevelt Alumni
         </Navbar.Brand>
-        <Navbar.Toggle bg='light' aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle style={{backgroundColor:'white'}} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
         <Nav className='ml-auto' style={{fontSize: 22}}>
