@@ -25,7 +25,7 @@ class ImpactContent extends React.Component {
             </p>
 
             <div className='impactContent'>
-              <img width={1000} height={540} src={RooseveltFront} alt='image' className="rounded mb-0"/>
+              <img width={1000} height={540} src={RooseveltFront} className="rounded mb-0" alt="Roosevelt"/>
             </div>
 
             <h2 className='impactContent2'>Fellowship</h2>
