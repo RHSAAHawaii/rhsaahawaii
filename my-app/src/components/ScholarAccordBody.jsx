@@ -6,7 +6,11 @@ class ScholarAccordBody extends React.Component {
   render() {
     return (
         <li>
-            {this.props.info.lastName}, {this.props.info.firstName}, {this.props.info.Amount} ({this.props.info.Scholarship}),{this.props.info.College}
+            {this.props.info.lastName}, {" "}
+            {this.props.info.firstName}, {" "}
+            {this.props.info.Amount} {" "}
+            ({this.props.info.Scholarship}), {" "}
+          {this.props.info.College}
         </li>
     )
   }
