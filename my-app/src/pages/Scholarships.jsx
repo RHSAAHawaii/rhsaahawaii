@@ -1,25 +1,21 @@
 import React from 'react';
 import '../style.css';
 import scholarshipPhoto from '../images/scholarships-2012.jpg';
-import scholars from '../data/scholars.json'
+import scholars from '../data/scholars.json';
 import _ from 'underscore/underscore-esm';
-
+import ScholarAccord from '../components/ScholarAccord';
 import {
   Accordion,
-  Card,
-  Button,
   Container,
   Image,
   Row,
   Col,
   Jumbotron
 } from 'react-bootstrap';
-// import Accordions from '../components/Accordions';
 
 class Scholarships extends React.Component {
-
   render() {
-
+    const arrayInfo = (_.groupBy(scholars, 'Class'));
     return (
         <div>
           <h1 className="impactHeader">Scholarships</h1>
@@ -42,7 +38,7 @@ class Scholarships extends React.Component {
               </Row>
             </Container>
           </Jumbotron>
-          <Container>
+          <Container style={{marginBottom: 25}}>
             <h2 style={{ marginTop: "50px" }}>Scholarship Requirements</h2>
             <ul>
               <li>Be cool</li>
@@ -53,75 +49,9 @@ class Scholarships extends React.Component {
               </li>
             </ul>
             <h2 style={{ marginTop: "50px" }}>Past Scholarship Winners</h2>
-
-            {/*I DONT KNOW HOW TO USE THE COMPONENT TO RENDER ALL THE STUFF FOR THE ACCORDION HELP PLEASE */}
-            {/*{scholars.map((current, index) => <Accordions key={index} item={current}/>)}*/}
-            {/** Maybe _.sortby(scholar, 'year') and make a dynamic accordion toggle for each year that exists?
-             * idk I will try look into this - Jun Ho
-             */}
-
-            <Accordion defaultActiveKey="0">
-
-              <Card>
-                <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="0">2020</Accordion.Toggle>
-                </Card.Header>
-                <Accordion.Collapse eventKey="0">
-                  <Card.Body>
-                    <ul>
-                      {scholars.filter(scholar => scholar.Class === 2020).map((scholar) => (<li>
-                        {scholar.firstName} {scholar.lastName}, {scholar.Amount}, {scholar.College}
-                        </li>))}
-                    </ul>
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
-
-              <Card>
-                <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="1">2019</Accordion.Toggle>
-                </Card.Header>
-                <Accordion.Collapse eventKey="1">
-                  <Card.Body>
-                    <ul>
-                      {scholars.filter(scholar => scholar.Class === 2019).map((scholar) => (<li>
-                        {scholar.firstName} {scholar.lastName}, {scholar.Amount}, {scholar.College}
-                      </li>))}
-                    </ul>
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
-
-              <Card>
-                <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="2">2018</Accordion.Toggle>
-                </Card.Header>
-                <Accordion.Collapse eventKey="2">
-                  <Card.Body>
-                    <ul>
-                      {scholars.filter(scholar => scholar.Class === 2018).map((scholar) => (<li>
-                        {scholar.firstName} {scholar.lastName}, {scholar.Amount} ({scholar.Scholarship}), {scholar.College}
-                      </li>))}
-                    </ul>
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
-
-              <Card>
-                <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="3">2017</Accordion.Toggle>
-                </Card.Header>
-                <Accordion.Collapse eventKey="3">
-                  <Card.Body>
-                    <ul>
-                      {scholars.filter(scholar => scholar.Class === 2013).map((scholar) => (<li>
-                        {scholar.firstName} {scholar.lastName}, {scholar.Amount}, {scholar.College}
-                      </li>))}
-                    </ul>
-                  </Card.Body>
-                </Accordion.Collapse>
-              </Card>
-
+            <Accordion defaultActiveKey='0'>
+              {_.map(arrayInfo, (current, index)=> <ScholarAccord classInfo={index}
+              scholarInfo={current} />).reverse()}
             </Accordion>
           </Container>
         </div>
