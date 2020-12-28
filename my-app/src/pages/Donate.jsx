@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Jumbotron, Button, Form, Accordion, Card, ListGroup } from 'react-bootstrap';
+import { Container, Jumbotron, Button, Accordion, Card, ListGroup } from 'react-bootstrap';
 import '../style.css';
 
 class DonateTitle extends React.Component {

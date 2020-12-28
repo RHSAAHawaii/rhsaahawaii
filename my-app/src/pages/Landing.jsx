@@ -1,18 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import '../style.css';
 import 'semantic-ui-css/semantic.min.css';
 import { Container, Image, Segment, Modal, Button, Header, Grid, Icon } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
-import rhsPhoto from '../images/landing2.jpg';
 import ogawa from '../images/headshot-ogawa.jpg';
 import test from '../images/rhsaa-logo-test.jpg';
 import projectGrad from '../images/projectgrad-temp.jpg';
 import rhsaaPreview from '../images/rhsaahawaii-1960mural.jpg';
 import rafPreview from '../images/raf-80thAnni.jpg';
 import servicePreview from '../images/service-paintingmural.jpg';
-
-const srcRHSLogo = 'http://rhsaahawaii.org/wp-content/uploads/2019/04/cropped-logo2-2.png';
 
 class Landing extends React.Component {
   state = { modalOpen: false }

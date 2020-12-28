@@ -2,8 +2,6 @@ import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
 import '../style.css';
 
-const srcRHSLogo = 'http://rhsaahawaii.org/wp-content/uploads/2019/04/cropped-logo2-2.png';
-
 class Footer extends React.Component {
   render() {
     return (
