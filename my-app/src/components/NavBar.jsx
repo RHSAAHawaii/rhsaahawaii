@@ -6,8 +6,8 @@ import '../style.css';
 class NavBar extends React.Component {
   render() {
     return (
-      <Navbar bg='danger' expand="lg" rounded id='navBar'>
-        <Navbar.Brand as={NavLink} exact to='/' className='font-effect-neon whiteText' style={{fontSize: 23}}>
+      <Navbar expand="lg" rounded id='navBar' shadow='lg'>
+        <Navbar.Brand as={NavLink} exact to='/' className='whiteText' style={{fontSize: 23}}>
           <img alt="Roosevelt Logo" src={'https://media.discordapp.net/attachments/755318856917975061/792002521379635200/logo_seal.png'}
           width="40"
           height="45"

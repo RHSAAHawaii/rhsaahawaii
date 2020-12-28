@@ -29,8 +29,12 @@ body{
   color: whitesmoke !important;
 }
 
+#boardCardColor{
+  background-color: white;
+}
+
 #navBar{
-  color: #cb0713;
+  background-color: #cb0713;
   border-bottom: 5px solid #f8b416;
 }
 
