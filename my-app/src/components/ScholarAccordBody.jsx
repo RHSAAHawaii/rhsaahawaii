@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import '../style.css';
 import { Container } from 'react-bootstrap';
 
+
 class ScholarAccordBody extends React.Component {
   render() {
     return (
+
         <Container>
           <li>
             {this.props.info.lastName}, {" "}

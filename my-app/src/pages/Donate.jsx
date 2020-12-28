@@ -1,13 +1,20 @@
 import React from 'react';
-import { Container, Jumbotron, Button, Form, Accordion, Card, ListGroup } from 'react-bootstrap';
+import { Container, Jumbotron, Button, Accordion, Card, ListGroup } from 'react-bootstrap';
 import '../style.css';
 
-class Donate extends React.Component {
+class DonateTitle extends React.Component {
+  render(){
+    return (
+      <h1 className='impactHeader'> Donations</h1>
+    )
+  }
+}
+
+class DonateContent extends React.Component {
   render() {
     const jumbotronStyle = { textAlign: 'center' };
     return (
         <div class='donate'>
-          <h1 className='impactHeader'><b>Donations</b></h1>
           <div style={jumbotronStyle}>
             <Jumbotron> 
               <h1>Donate and Make a Difference!</h1>
@@ -32,10 +39,23 @@ class Donate extends React.Component {
               <Card>
                 <Card.Header>
                   <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                    Scholarships - $73,100
+                    Scholarships - $128,600
                   </Accordion.Toggle>
-                  
                 </Card.Header>
+                <Accordion.Collapse eventKey="0">
+                  <Card.Body>
+                    <ListGroup.Item><b>Donor List:</b></ListGroup.Item>
+                    <ListGroup.Item>Class of '61</ListGroup.Item>
+                    <ListGroup.Item>Class of '62</ListGroup.Item>
+                    <ListGroup.Item>Class of '64</ListGroup.Item>
+                    <ListGroup.Item>Class of '67</ListGroup.Item>
+                    <ListGroup.Item>Friends of Red & Gold</ListGroup.Item>
+                    <ListGroup.Item>Hawaii Alpha Delta Kappa</ListGroup.Item>
+                    <ListGroup.Item>Melanie Kawano</ListGroup.Item>
+                    <ListGroup.Item>Lien Phu</ListGroup.Item>
+                    <ListGroup.Item>RAF</ListGroup.Item>
+                  </Card.Body>
+                </Accordion.Collapse>
               </Card>
               <Card>
                 <Card.Header>
@@ -99,6 +119,19 @@ class Donate extends React.Component {
           </Container>
         </div>
     )
+  }
+}
+
+class Donate extends React.Component {
+  render() {
+
+    return (
+        <div>
+          <DonateTitle/>
+          <DonateContent/>
+        </div>
+
+    );
   }
 }
 

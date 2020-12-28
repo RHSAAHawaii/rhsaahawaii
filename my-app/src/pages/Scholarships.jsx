@@ -22,7 +22,7 @@ class Scholarships extends React.Component {
           <Jumbotron>
             <Container>
               <Row>
-                <Col><Image rounded width={400} height={300} src={scholarshipPhoto}/></Col>
+                <Col><Image rounded width='100%' src={scholarshipPhoto}/></Col>
                 <Col>
                   <p>We seek to provide financial aid to
                     graduates of Roosevelt High School

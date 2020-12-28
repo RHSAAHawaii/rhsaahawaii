@@ -9,8 +9,6 @@ import rhsaaPreview from '../images/rhsaahawaii-1960mural.jpg';
 import rafPreview from '../images/raf-80thAnni.jpg';
 import servicePreview from '../images/service-paintingmural.jpg';
 
-const srcRHSLogo = 'http://rhsaahawaii.org/wp-content/uploads/2019/04/cropped-logo2-2.png';
-
 class Landing extends React.Component {
   state = { modalOpen: false }
   handleOpen = () => this.setState({ modalOpen: true })
