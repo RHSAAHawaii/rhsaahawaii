@@ -5,7 +5,7 @@ import RooseveltFront from '../images/RooseveltFront.jpg';
 class ImpactTitle extends React.Component {
   render(){
     return (
-        <div className='impactHeaderBackground'>
+        <div className='OFF-impactHeaderBackground'>
           <br/>
       <h1 className='impactHeader'> About Roosevelt Alumni Foundation</h1>
           <br/>
