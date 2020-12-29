@@ -1,20 +1,13 @@
 import React from 'react';
-import { Container, Jumbotron, Button, Accordion, Card, ListGroup } from 'react-bootstrap';
+import { Container, Jumbotron, Button, Accordion, Card, ListGroup, Form } from 'react-bootstrap';
 import '../style.css';
 
-class DonateTitle extends React.Component {
-  render(){
-    return (
-      <h1 className='impactHeader'> Donations</h1>
-    )
-  }
-}
-
-class DonateContent extends React.Component {
+class Donate extends React.Component {
   render() {
     const jumbotronStyle = { textAlign: 'center' };
     return (
         <div class='donate'>
+          <h1 className='impactHeader'> Donations</h1>
           <div style={jumbotronStyle}>
             <Jumbotron> 
               <h1>Donate and Make a Difference!</h1>
@@ -30,6 +23,15 @@ class DonateContent extends React.Component {
                   <input type="hidden" name="currency_code" value="USD" />
                   <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"  name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                   <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+              </p>
+              <p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" >
+                  <input type="hidden" name="cmd" value="_donations" />
+                  <input type="hidden" name="business" value="rafhawaii@gmail.com"/>
+                  <input type="hidden" name="item_name" value="Roosevelt Alumni Association Donation" />
+                  <input type="hidden" name="currency_code" value="USD" />
+                  <button type="submit" class="btn btn-primary">Donate</button>
                 </form>
               </p>
             </Jumbotron>
@@ -119,19 +121,6 @@ class DonateContent extends React.Component {
           </Container>
         </div>
     )
-  }
-}
-
-class Donate extends React.Component {
-  render() {
-
-    return (
-        <div>
-          <DonateTitle/>
-          <DonateContent/>
-        </div>
-
-    );
   }
 }
 
