@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
         <BrowserRouter>
-          <div>
+          <div className='backgroundStyle'>
             <NavBar />
             <Switch>
               <Route path="/" component={Landing} exact/>
