@@ -10,11 +10,13 @@ class DonateAccord extends React.Component {
     return (
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey={this.props.classInfo}>Class of {this.props.classInfo}</Accordion.Toggle>
+                  <Accordion.Toggle as={Button} variant="link" eventKey={this.props.groupInfo} className='donate-acrdTitle'>
+                    <b>{this.props.groupInfo}</b> | ${_.reduce(_.pluck(this.props.donationInfo, 'amount'), (memo, num)=>memo+num).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                  </Accordion.Toggle>
                 </Card.Header>
-                <Accordion.Collapse eventKey={this.props.classInfo}>
+                <Accordion.Collapse eventKey={this.props.groupInfo}>
                   <Card.Body>
-                    {_.map(this.props.scholarInfo, (current, index) => <DonateAccordBody key={index} info={current}/> )}
+                    {_.map(this.props.donationInfo, (current, index) => <DonateAccordBody key={index} info={current}/> )}
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -23,8 +25,8 @@ class DonateAccord extends React.Component {
 }
 
 DonateAccord.propTypes = {
-  scholarInfo: PropTypes.array.isRequired,
-  classInfo: PropTypes.string.isRequired,
+  donationInfo: PropTypes.array.isRequired,
+  groupInfo: PropTypes.string.isRequired,
 };
 
 export default DonateAccord;

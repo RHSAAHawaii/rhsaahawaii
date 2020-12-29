@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../style.css';
-import { Container } from 'react-bootstrap';
+import { Container, ListGroup } from 'react-bootstrap';
 
 
 class DonateAccordBody extends React.Component {
@@ -9,13 +9,10 @@ class DonateAccordBody extends React.Component {
     return (
 
         <Container>
-          <li>
-            {this.props.info.lastName}, {" "}
-            {this.props.info.firstName}, {" "}
-            {this.props.info.Amount} {" "}
-            ({this.props.info.Scholarship}), {" "}
-            {this.props.info.College}
-          </li>
+          <ListGroup.Item>
+            {this.props.info.purpose}{" - "}
+            ${this.props.info.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+          </ListGroup.Item>
         </Container>
     )
   }
