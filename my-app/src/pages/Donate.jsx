@@ -1,10 +1,14 @@
 import React from 'react';
 import { Container, Jumbotron, Button, Accordion, Card, ListGroup, Form } from 'react-bootstrap';
+import scholars from '../data/scholars.json';
+import _ from 'underscore/underscore-esm';
+import DonateAccord from '../components/DonateAccord';
 import '../style.css';
 
 class Donate extends React.Component {
   render() {
     const jumbotronStyle = { textAlign: 'center' };
+    const arrayInfo = (_.groupBy(scholars, 'Class'));
     return (
         <div class='donate'>
           <h1 className='impactHeader'> Donations</h1>
@@ -30,36 +34,27 @@ class Donate extends React.Component {
             <Accordion defaultActiveKey="0">
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                    Scholarships - $128,600
+                  <Accordion.Toggle as={Button} variant="link" eventKey="0" className='donate-acrdTitle'>
+                    <b>Scholarships</b> | ${_.reduce(_.map(_.pluck(scholars, 'Amount'), amount=>parseFloat(amount.substring(1).replace(/,/g, '')) ), (a,b)=>a+b).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">
                   <Card.Body>
-                    <ListGroup.Item><b>Donor List:</b></ListGroup.Item>
-                    <ListGroup.Item>Class of '61</ListGroup.Item>
-                    <ListGroup.Item>Class of '62</ListGroup.Item>
-                    <ListGroup.Item>Class of '64</ListGroup.Item>
-                    <ListGroup.Item>Class of '67</ListGroup.Item>
-                    <ListGroup.Item>Friends of Red & Gold</ListGroup.Item>
-                    <ListGroup.Item>Hawaii Alpha Delta Kappa</ListGroup.Item>
-                    <ListGroup.Item>Melanie Kawano</ListGroup.Item>
-                    <ListGroup.Item>Lien Phu</ListGroup.Item>
-                    <ListGroup.Item>RAF</ListGroup.Item>
+                    {_.map(_.sortBy(_.uniq(_.pluck(scholars, 'Scholarship'))), (donor)=><ListGroup.Item>{donor}</ListGroup.Item>)}
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                    Project Grad - $9,810
+                  <Accordion.Toggle as={Button} variant="link" eventKey="1" className='donate-acrdTitle'>
+                    <b>Project Grad</b> | $9,810
                   </Accordion.Toggle>
                 </Card.Header>
               </Card>
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                    Campus Beautification - $10,078
+                  <Accordion.Toggle as={Button} variant="link" eventKey="2" className='donate-acrdTitle'>
+                    <b>Campus Beautification</b> | $10,078
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
@@ -71,8 +66,8 @@ class Donate extends React.Component {
               </Card>
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                    School Supplies - $23.053
+                  <Accordion.Toggle as={Button} variant="link" eventKey="3" className='donate-acrdTitle'>
+                    <b>School Supplies</b> | $23.053
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="3">
@@ -85,8 +80,8 @@ class Donate extends React.Component {
               </Card>
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="4">
-                    Extracurricular Activities - $37,655
+                  <Accordion.Toggle as={Button} variant="link" eventKey="4" className='donate-acrdTitle'>
+                    <b>Extracurricular Activities</b> | $37,655
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="4">
