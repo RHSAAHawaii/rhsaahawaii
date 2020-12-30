@@ -5,13 +5,11 @@ body{
   background: url(./images/landing2.jpg) no-repeat center center fixed;
   background-size: cover;
   background-position: 0px -75px;
-
 }
 
-.donate {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: #b8b8b8;
+
+.backgroundStyle {
+  background-color: #f3e3c0;
 }
 
 #footer{
