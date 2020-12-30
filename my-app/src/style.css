@@ -1,6 +1,4 @@
-body{
-  font-family: "Sofia", sans-serif;
-}
+
 .backgroundImage {
   background: url(./images/landing2.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -34,9 +32,8 @@ body{
   border-bottom: 5px solid #f8b416;
 }
 
-.navBarFontSize{
-  font-size: 22px;
-  font-family: "Sofia", sans-serif !important;
+#logoFont{
+  font-family: 'Domine', serif;
 }
 
 .impact {
@@ -88,4 +85,23 @@ body{
   margin-top: -7em;
   padding-bottom: 2em;
   width: 10%;
+}
+
+/*Scholarships Page*/
+.scholarHeader {
+  font-size: 3em;
+  font-family: 'Domine', serif;
+  margin-top: .5em !important;
+  margin-bottom: .5em !important;
+  color: #cb0713;
+}
+.scholarSubHeader {
+  font-family: 'Domine', serif;
+  color: #cb0713;
+}
+
+.containerOpa {
+  opacity: 1 !important;
+  max-width: 100%;
+  height: auto;
 }
