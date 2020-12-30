@@ -23,7 +23,7 @@ class Scholarships extends React.Component {
 
     return (
         <div>
-          <h1 className="scholarHeader">Scholarships</h1>
+          <h1 className="impactHeader">Scholarships</h1>
           <Jumbotron>
             <Container>
               <Row>
