@@ -11,7 +11,7 @@ import '../style-donate.css';
 
 class Donate extends React.Component {
   render() {
-    const jumbotronStyle = { textAlign: 'center', marginTop: '450px' };
+    const jumbotronStyle = { textAlign: 'center'};
     const arrayInfo = (_.groupBy(donations, 'group'));
     const donationsImageStyle = {  height: 'auto', right: '0%' };
     return (
@@ -32,8 +32,10 @@ class Donate extends React.Component {
                         </p>
                     </div>
               </div>
-          <div style={jumbotronStyle}>
-            <Jumbotron> 
+            <Jumbotron style={{backgroundColor: '#212529', marginBottom: '0', borderRadius: '0'}}>
+              buffer<br/>
+            </Jumbotron>
+            <Jumbotron style={jumbotronStyle}> 
               <h1>Donate and Make a Difference!</h1>
               <h5>A simple gift can go a long way. </h5>
               <p>
@@ -96,7 +98,6 @@ class Donate extends React.Component {
                 </Row>
               </Container>
             </Jumbotron>
-          </div>
           <Container>
             <h2 className='scholarHeader'>Donations at Work</h2>
             <Accordion className='donate-acrd'>
