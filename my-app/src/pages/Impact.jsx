@@ -3,10 +3,10 @@ import '../style.css';
 import { Container } from 'react-bootstrap';
 import RooseveltFront from '../images/RooseveltFront.jpg';
 
-class ImpactContent extends React.Component {
+class Impact extends React.Component {
   render() {
     return (
-          
+          <Container>
           <div className='impact'>
             
           <div className='OFF-impactHeaderBackground'>
@@ -14,8 +14,7 @@ class ImpactContent extends React.Component {
             <h1 className='impactHeader'> About Roosevelt Alumni Foundation</h1>
                 <br/>
           </div>
-
-
+          
             <p className='impactContent'>
               The Roosevelt Alumni Foundation (RAF) raises funds to support our alma mater, 
               President Theodore Roosevelt High School, in a variety of ways. These include offering annual scholarships to alumni.
@@ -51,21 +50,8 @@ class ImpactContent extends React.Component {
               If you want to subscribe to our newsletter or share information about your class/classmates, please download the membership application below and join the RHSAA.   E-mail your favorite memories at Roosevelt to our Newsletter Editor- Pualani Good '60 at: rhsaa.hawaii@gmail.com
             </p>
           </div>
-    )
-  }
-}
-
-class Impact extends React.Component {
-  render() {
-    return (
-
-        <div>
-          <Container>
-          <ImpactContent/>
           </Container>
-        </div>
-
-    );
+    )
   }
 }
 
