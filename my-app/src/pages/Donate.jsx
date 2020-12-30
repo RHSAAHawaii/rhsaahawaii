@@ -14,7 +14,7 @@ class Donate extends React.Component {
     const arrayInfo = (_.groupBy(donations, 'group'));
     return (
         <div className='donate'>
-            <h1 className='impactHeader'> Donations</h1>
+            <Container><h1 className='scholarHeader'> DONATIONS</h1></Container>
             <div class="hovereffect">
                 <Image class="img-responsive" src={PhotoFinishLine} fluid/>
                     <div class="overlay">
