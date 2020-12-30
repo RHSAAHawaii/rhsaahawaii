@@ -36,6 +36,7 @@
   font-family: 'Domine', serif;
 }
 
+/*Impact Page*/
 .impact {
   margin-bottom: 3em;
 }
@@ -61,7 +62,7 @@ body{
 }
 
 .impactHeaderBackground{
-  background-color: #f8f9fa;
+  /*background-color: #f8f9fa;*/
 }
 
 .impactContent {
@@ -74,10 +75,7 @@ body{
 }
 
 .impactContent2{
-  margin-bottom: -0.5em;
-  margin-top: 1.2em !important;
-  margin-left: 3em;
-  margin-right: 24em;
+  margin-top: 30px;
   font-size: 2em;
   color: #cb0713;
 }
@@ -91,11 +89,16 @@ body{
   width: 10%;
 }
 
+.rooseveltFront {
+  background: url("../src/images/RooseveltFront.jpg") no-repeat center;
+  background-size: cover;
+}
+
 /*Scholarships Page*/
 .scholarHeader {
   font-size: 3em;
   font-family: 'Domine', serif;
-  margin-top: .5em !important;
+  margin-top: 1.5em !important;
   margin-bottom: .5em !important;
   color: #cb0713;
 }
