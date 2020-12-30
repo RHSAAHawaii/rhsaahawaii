@@ -1,18 +1,35 @@
 import React from 'react';
-import { Container, Jumbotron, Button, Accordion, Card, ListGroup, Form } from 'react-bootstrap';
+import { Container, Jumbotron, Button, Accordion, Card, ListGroup, Image } from 'react-bootstrap';
 import scholars from '../data/scholars.json';
 import donations from '../data/donations.json';
 import _ from 'underscore/underscore-esm';
 import DonateAccord from '../components/DonateAccord';
+import PhotoFinishLine from '../images/donate/donations_finishline.jpg';
 import '../style.css';
+import '../style-donate.css';
 
 class Donate extends React.Component {
   render() {
-    const jumbotronStyle = { textAlign: 'center' };
+    const jumbotronStyle = { textAlign: 'center', paddingTop: '450px' };
     const arrayInfo = (_.groupBy(donations, 'group'));
     return (
-        <div class='donate'>
-          <h1 className='impactHeader'> Donations</h1>
+        <div className='donate'>
+            <h1 className='impactHeader'> Donations</h1>
+            <div class="hovereffect">
+                <Image class="img-responsive" src={PhotoFinishLine} fluid/>
+                    <div class="overlay">
+                        <h2>Will you help a Rough Rider make it to the endzone?</h2>
+                        <p>
+                          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" >
+                            <input type="hidden" name="cmd" value="_donations" />
+                            <input type="hidden" name="business" value="rafhawaii@gmail.com"/>
+                            <input type="hidden" name="item_name" value="Roosevelt Alumni Association Donation" />
+                            <input type="hidden" name="currency_code" value="USD" />
+                            <button type="submit" class="btn btn-primary btn-lg">Donate Here</button>
+                          </form>
+                        </p>
+                    </div>
+              </div>
           <div style={jumbotronStyle}>
             <Jumbotron> 
               <h1>Donate and Make a Difference!</h1>
