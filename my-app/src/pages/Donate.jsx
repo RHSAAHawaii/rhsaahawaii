@@ -43,6 +43,7 @@ class Donate extends React.Component {
                   <input type="hidden" name="business" value="rafhawaii@gmail.com"/>
                   <input type="hidden" name="item_name" value="Roosevelt Alumni Association Donation" />
                   <input type="hidden" name="currency_code" value="USD" />
+                  <input type="hidden" name="amount" value="25.00"></input>
                   <button type="submit" class="btn btn-primary btn-lg">Donate Here</button>
                 </form>
               </p>
