@@ -7,6 +7,7 @@ body{
   background-position: 0px -75px;
 }
 
+
 .backgroundStyle {
   background-color: #f3e3c0;
 }
@@ -88,4 +89,17 @@ body{
   margin-top: -7em;
   padding-bottom: 2em;
   width: 10%;
+}
+
+/*Scholarships Page*/
+.scholarHeader {
+  font-size: 3em;
+  font-family: 'Domine', serif;
+  margin-top: .5em !important;
+  margin-bottom: .5em !important;
+  color: #cb0713;
+}
+.scholarSubHeader {
+  font-family: 'Domine', serif;
+  color: #cb0713;
 }
