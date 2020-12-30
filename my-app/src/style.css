@@ -19,3 +19,9 @@ body {
   text-align: center;
   margin-bottom: 10px;
 }
+
+.containerOpa {
+  opacity: 1 !important;
+  max-width: 100%;
+  height: auto;
+}
