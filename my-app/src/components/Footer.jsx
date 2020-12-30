@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Image, Container } from 'react-bootstrap';
+import rooseveltWhiteLogo from '../images/rooseveltWhiteLogo.png';
 import '../style.css';
 
 class Footer extends React.Component {
@@ -9,7 +10,7 @@ class Footer extends React.Component {
         <Container>
         <Row>
           <Col className='col-5 text-right'>
-            <Image src={'https://media.discordapp.net/attachments/755318856917975061/792002521379635200/logo_seal.png'} width='100' height='120'/>
+            <Image src={rooseveltWhiteLogo} width='100' height='120'/>
           </Col>
           <Col className='text-light' style={{fontSize: 15}}>
             <p className='footerText'>Roosevelt High School Alumni Association</p>
