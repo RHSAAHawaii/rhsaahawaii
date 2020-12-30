@@ -12,7 +12,7 @@ class Footer extends React.Component {
             <Image src={'https://media.discordapp.net/attachments/755318856917975061/792002521379635200/logo_seal.png'} width='100' height='120'/>
           </Col>
 
-          <Col className='text-light'>
+          <Col className='text-light' style={{fontSize: 15}}>
             <p className='footerText'>Roosevelt High School Alumni Association</p>
             <p className='footerText'>Roosevelt Alumni Foundation</p>
             <p className='footerText'>P.O. Box 23424</p>
@@ -21,7 +21,7 @@ class Footer extends React.Component {
           </Col>
         </Row>
 
-        <Row style={{marginTop: 30}}>
+        <Row style={{marginTop: 30, fontSize: 10}}>
           <Col className='text-center text-light'>
           <p className='font-italic footerText'>This is the official website of the Roosevelt High School Alumni Association (RHSAA) / Roosevelt Alumni Foundation (RAF), which is a non profit organization in accordance with U.S. Internal Revenue Code</p>
           <p className='font-italic'>RHSAA 2020, All Rights Reserved</p>

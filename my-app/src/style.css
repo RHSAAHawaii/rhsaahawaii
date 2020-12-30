@@ -1,12 +1,9 @@
-body{
-  font-family: "Sofia", sans-serif;
-}
+
 .backgroundImage {
   background: url(./images/landing2.jpg) no-repeat center center fixed;
   background-size: cover;
   background-position: 0px -75px;
 }
-
 
 .backgroundStyle {
   background-color: #f3e3c0;
@@ -33,11 +30,6 @@ body{
 #navBar{
   background-color: #cb0713;
   border-bottom: 5px solid #f8b416;
-}
-
-.navBarFontSize{
-  font-size: 22px;
-  font-family: "Sofia", sans-serif !important;
 }
 
 #logoFont{

@@ -1,25 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import '../style.css';
-import 'semantic-ui-css/semantic.min.css';
-//import { Container, Image, Segment, Modal, Button, Header, Grid, Icon } from 'semantic-ui-react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Col, Container, Row, Image } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import rhsPhoto from '../images/landing2.jpg';
-import ogawa from '../images/headshot-ogawa.jpg';
 import raf from '../images/raf2.png';
 import projectGrad from '../images/projectgrad-temp.jpg';
 import rhsaaPreview from '../images/rhsaahawaii-1960mural.jpg';
 import rafPreview from '../images/raf-80thAnni.jpg';
 import servicePreview from '../images/service-paintingmural.jpg';
 
-const srcRHSLogo = 'http://rhsaahawaii.org/wp-content/uploads/2019/04/cropped-logo2-2.png';
-
 class Landing extends React.Component {
 
   render() {
-    const segmentStyle = { margin: '0 0 0 0', padding: '40px' };
-    const gridStyle = { height: "550px" }
     const imageStyle = { border: '2px solid #d4af37' };
     return (
       <div className='backgroundImage'>

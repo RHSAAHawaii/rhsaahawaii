@@ -6,8 +6,8 @@ import '../style.css';
 class NavBar extends React.Component {
   render() {
     return (
-      <Navbar expand="lg" rounded id='navBar' shadow='lg'>
-        <Navbar.Brand as={NavLink} exact to='/' className='whiteText' style={{fontSize: 23}} id='logoFont'>
+      <Navbar expand="lg" rounded id='navBar'>
+        <Navbar.Brand as={NavLink} exact to='/' className='whiteText' style={{fontSize: 22}} id='logoFont'>
           <img alt="Roosevelt Logo" src={'https://media.discordapp.net/attachments/755318856917975061/792002521379635200/logo_seal.png'}
           width="40"
           height="45"
@@ -18,7 +18,7 @@ class NavBar extends React.Component {
         <Navbar.Toggle style={{backgroundColor:'white'}} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
-        <Nav className='ml-auto' style={{fontSize: 22}}>
+        <Nav className='ml-auto' style={{fontSize: 15}}>
           <Nav.Link className='whiteText' as={NavLink} exact to='/impact'>Impact</Nav.Link>
           <Nav.Link className='whiteText' as={NavLink} exact to='/events'>Events</Nav.Link>
           <Nav.Link className='whiteText' as={NavLink} exact to='/members'>Membership</Nav.Link>
