@@ -18,7 +18,7 @@ class NavBar extends React.Component {
         <Navbar.Toggle style={{backgroundColor:'white'}} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
-        <Nav className='ml-auto' style={{fontSize: 15}}>
+        <Nav className='ml-auto' style={{fontSize: 20}}>
           <Nav.Link className='whiteText' as={NavLink} exact to='/impact'>Impact</Nav.Link>
           <Nav.Link className='whiteText' as={NavLink} exact to='/events'>Events</Nav.Link>
           <Nav.Link className='whiteText' as={NavLink} exact to='/members'>Membership</Nav.Link>
