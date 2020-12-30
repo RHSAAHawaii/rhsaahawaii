@@ -3,26 +3,24 @@ import '../style.css';
 import { Container } from 'react-bootstrap';
 import RooseveltFront from '../images/RooseveltFront.jpg';
 
-class ImpactTitle extends React.Component {
-  render(){
-    return (
-        <div className='OFF-impactHeaderBackground'>
-          <br/>
-      <h1 className='impactHeader'> About Roosevelt Alumni Foundation</h1>
-          <br/>
-        </div>
-
-    )
-  }
-}
-
 class ImpactContent extends React.Component {
   render() {
     return (
-
+          
           <div className='impact'>
+            
+          <div className='OFF-impactHeaderBackground'>
+                <br/>
+            <h1 className='impactHeader'> About Roosevelt Alumni Foundation</h1>
+                <br/>
+          </div>
+
+
             <p className='impactContent'>
-              The Roosevelt Alumni Foundation (RAF) raises funds to support our alma mater, President Theodore Roosevelt High School, in a variety of ways. These include offering annual scholarships to alumni. We also admit qualified applicants to the Roosevelt Hall of Fame. As a designated non-profit organization, donations to the RAF are tax deductible.
+              The Roosevelt Alumni Foundation (RAF) raises funds to support our alma mater, 
+              President Theodore Roosevelt High School, in a variety of ways. These include offering annual scholarships to alumni.
+               We also admit qualified applicants to the Roosevelt Hall of Fame. As a designated non-profit organization,
+                donations to the RAF are tax deductible.
             </p>
 
             <div className='impactContent'>
@@ -63,7 +61,6 @@ class Impact extends React.Component {
 
         <div>
           <Container>
-          <ImpactTitle/>
           <ImpactContent/>
           </Container>
         </div>
