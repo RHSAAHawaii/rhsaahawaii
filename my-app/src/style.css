@@ -40,6 +40,10 @@ body{
   font-family: "Sofia", sans-serif !important;
 }
 
+#logoFont{
+  font-family: 'Domine', serif;
+}
+
 .impact {
   margin-bottom: 3em;
 }
