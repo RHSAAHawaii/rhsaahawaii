@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style.css';
+import { Container } from 'react-bootstrap';
 import RooseveltFront from '../images/RooseveltFront.jpg';
 
 class ImpactTitle extends React.Component {
@@ -52,24 +53,6 @@ class ImpactContent extends React.Component {
               If you want to subscribe to our newsletter or share information about your class/classmates, please download the membership application below and join the RHSAA.   E-mail your favorite memories at Roosevelt to our Newsletter Editor- Pualani Good '60 at: rhsaa.hawaii@gmail.com
             </p>
           </div>
-
-    )
-  }
-}
-
-class ImpactDonation extends React.Component {
-  render() {
-    return(
-
-        <div className='impactHeaderBackground'>
-          <br/>
-          <h1 className='impactFooter'> Sponsor or Donate</h1>
-          <br/>
-          <a href='https://www.paypal.com/donate/?cHJwPXJwdA='>
-            <img className="impactDonationImage" src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif' alt='donateImage'/>
-          </a>
-        </div>
-
     )
   }
 }
@@ -79,9 +62,10 @@ class Impact extends React.Component {
     return (
 
         <div>
+          <Container>
           <ImpactTitle/>
           <ImpactContent/>
-          <ImpactDonation/>
+          </Container>
         </div>
 
     );

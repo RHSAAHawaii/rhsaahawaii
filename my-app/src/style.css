@@ -36,59 +36,8 @@
   font-family: 'Domine', serif;
 }
 
-.impact {
-  margin-bottom: 3em;
-}
-
-.impactHeader{
-  font-size: 3em;
-  margin-bottom: .5em;
-  margin-top: .5em !important;
-  margin-left: 2em;
-  color: #cb0713;
-}
-
-.impactFooter{
-  font-size: 3em;
-  margin-bottom: .5em;
-  margin-top: .5em !important;
-  margin-left: 25em;
-  color: #cb0713;
-}
-
 body{
   font-family: "Lato", sans-serif;
-}
-
-.impactHeaderBackground{
-  background-color: #f8f9fa;
-}
-
-.impactContent {
-  margin-bottom: 1em;
-  margin-top: 1em !important;
-  margin-left: 3em;
-  margin-right: 18em;
-  font-size: 2em;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.impactContent2{
-  margin-bottom: -0.5em;
-  margin-top: 1.2em !important;
-  margin-left: 3em;
-  margin-right: 24em;
-  font-size: 2em;
-  color: #cb0713;
-}
-
-.impactDonationImage{
-  display: block;
-  margin-left: auto;
-  margin-right: 5em;
-  margin-top: -7em;
-  padding-bottom: 2em;
-  width: 10%;
 }
 
 /*Scholarships Page*/
