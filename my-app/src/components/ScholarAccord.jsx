@@ -10,7 +10,9 @@ class ScholarAccord extends React.Component {
     return (
               <Card>
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey={this.props.classInfo}>Class of {this.props.classInfo}</Accordion.Toggle>
+                  <Accordion.Toggle as={Button} variant="link" eventKey={this.props.classInfo} className='donate-acrdTitle'>
+                    <b>Class of {this.props.classInfo}</b>
+                    </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey={this.props.classInfo}>
                   <Card.Body>

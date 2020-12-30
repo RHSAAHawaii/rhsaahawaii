@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../style.css';
-import { Container } from 'react-bootstrap';
+import { Container, ListGroupItem } from 'react-bootstrap';
 
 
 class ScholarAccordBody extends React.Component {
@@ -9,13 +9,13 @@ class ScholarAccordBody extends React.Component {
     return (
 
         <Container>
-          <li>
+          <ListGroupItem>
             {this.props.info.lastName}, {" "}
             {this.props.info.firstName}, {" "}
             {this.props.info.Amount} {" "}
             ({this.props.info.Scholarship}), {" "}
             {this.props.info.College}
-          </li>
+          </ListGroupItem>
         </Container>
     )
   }
