@@ -58,3 +58,19 @@ body{
   max-width: 100%;
   height: auto;
 }
+
+/* Events */
+.responsiveCal {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsiveCal iframe {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 75%;
+}
