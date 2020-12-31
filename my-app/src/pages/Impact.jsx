@@ -1,21 +1,9 @@
 import React from 'react';
 import '../style.css';
-import { Container } from 'react-bootstrap';
+import { Container, Jumbotron, Row, Col, Image } from 'react-bootstrap';
 
-// class ImpactTitle extends React.Component {
-//   render() {
-//     return (
-//         <div className='OFF-impactHeaderBackground'>
-//           <br/>
-//
-//           <br/>
-//         </div>
-//
-//     )
-//   }
-// }
+class Impact extends React.Component {
 
-class ImpactContent extends React.Component {
   render() {
     return (
         <div>
@@ -24,20 +12,21 @@ class ImpactContent extends React.Component {
 
           <Container>
             <div>
-                  <h2 className='impactContent2'>Origins</h2>
-                  <p>
-                    The Roosevelt High School Alumni Association ("RHSAA") was originally chartered in 1975 as Rough Riders -
-                    Hawaii. In 1979, the name was officially changed to RHSAA. In 1993, the Roosevelt Alumni Foundation
-                    ("RAF") was formed and obtained a non-profit designation - 501c(3), from the Internal Revenue Service in
-                    1996, making all donations to the RAF tax deductible.
-                  </p>
+              <h2 className='impactContent2'>Origins</h2>
+              <p>
+                The Roosevelt High School Alumni Association ("RHSAA") was originally chartered in 1975 as Rough Riders
+                -
+                Hawaii. In 1979, the name was officially changed to RHSAA. In 1993, the Roosevelt Alumni Foundation
+                ("RAF") was formed and obtained a non-profit designation - 501c(3), from the Internal Revenue Service in
+                1996, making all donations to the RAF tax deductible.
+              </p>
 
-                  <h2 className='impactContent2'>Fellowship</h2>
-                  The Roosevelt High School Alumni Association (RHSAA) works toward developing a spirit of fellowship
-                  among
-                  its members in order to rekindle and strengthen ties to our alma mater and each other by publishing
-                  newsletters for its members and co-hosting with the RAF an annual ho’olaule’a – a get together for
-                  alumni.
+              <h2 className='impactContent2'>Fellowship</h2>
+              The Roosevelt High School Alumni Association (RHSAA) works toward developing a spirit of fellowship
+              among
+              its members in order to rekindle and strengthen ties to our alma mater and each other by publishing
+              newsletters for its members and co-hosting with the RAF an annual ho’olaule’a – a get together for
+              alumni.
             </div>
 
             <h2 className='impactContent2'>Scholarship</h2>
@@ -59,42 +48,10 @@ class ImpactContent extends React.Component {
             </p>
           </Container>
         </div>
-
-    )
-  }
-
-}
-
-class ImpactDonation extends React.Component {
-  render() {
-    return (
-
-        <div className='impactHeaderBackground'>
-          <br/>
-          <h1 className='impactFooter'> Sponsor or Donate</h1>
-          <br/>
-          <a href='https://www.paypal.com/donate/?cHJwPXJwdA='>
-            <img className="impactDonationImage" src='https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif'
-                 alt='donateImage'/>
-          </a>
-        </div>
-
-    )
-  }
-}
-
-class Impact extends React.Component {
-  render() {
-    return (
-
-        <div>
-          {/*<ImpactTitle/>*/}
-          <ImpactContent/>
-          <ImpactDonation/>
-        </div>
-
     );
+
   }
+
 }
 
 export default Impact;

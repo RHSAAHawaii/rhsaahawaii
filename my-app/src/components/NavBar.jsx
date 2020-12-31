@@ -2,13 +2,14 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import '../style.css';
+import rooseveltWhiteLogo from '../images/rooseveltWhiteLogo.png';
 
 class NavBar extends React.Component {
   render() {
     return (
       <Navbar expand="lg" rounded id='navBar'>
         <Navbar.Brand as={NavLink} exact to='/' className='whiteText' style={{fontSize: 22}} id='logoFont'>
-          <img alt="Roosevelt Logo" src={'https://media.discordapp.net/attachments/755318856917975061/792002521379635200/logo_seal.png'}
+          <img alt="Roosevelt Logo" src={rooseveltWhiteLogo}
           width="40"
           height="45"
           style={{marginRight:10}}

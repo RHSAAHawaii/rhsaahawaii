@@ -36,26 +36,8 @@
   font-family: 'Domine', serif;
 }
 
+
 /*Impact Page*/
-.impact {
-  margin-bottom: 3em;
-}
-
-.impactHeader{
-  font-size: 3em;
-  margin-bottom: .5em;
-  margin-top: .5em !important;
-  margin-left: 2em;
-  color: #cb0713;
-}
-
-.impactFooter{
-  font-size: 3em;
-  margin-bottom: .5em;
-  margin-top: .5em !important;
-  margin-left: 25em;
-  color: #cb0713;
-}
 
 body{
   font-family: "Lato", sans-serif;
@@ -63,21 +45,6 @@ body{
 
 .impactHeaderBackground{
   /*background-color: #f8f9fa;*/
-}
-
-.impactContent {
-  margin-bottom: 1em;
-  margin-top: 1em !important;
-  margin-left: 3em;
-  margin-right: 18em;
-  font-size: 2em;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.impactContent2{
-  margin-top: 30px;
-  font-size: 2em;
-  color: #cb0713;
 }
 
 .impactDonationImage{
@@ -111,4 +78,20 @@ body{
   opacity: 1 !important;
   max-width: 100%;
   height: auto;
+}
+
+/* Events */
+.responsiveCal {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsiveCal iframe {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 75%;
 }
