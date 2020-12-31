@@ -1,19 +1,26 @@
 import React from 'react';
-import { Container, Jumbotron, Button, Accordion, Card, ListGroup, Image, Col, Row } from 'react-bootstrap';
+import { Container, Jumbotron, Button, Accordion, Card, ListGroup, Image, Col, Row, Modal } from 'react-bootstrap';
 import scholars from '../data/scholars.json';
 import donations from '../data/donations.json';
 import _ from 'underscore/underscore-esm';
 import DonateAccord from '../components/DonateAccord';
 import PhotoFinishLine from '../images/donate/donations_finishline.jpg';
 import PhotoDonateChoices from '../images/donate/kenekeGusman.jpg';
+import PhotoPresMessage from '../images/donate/president_message.jpg';
 import '../style.css';
 import '../style-donate.css';
 
+
 class Donate extends React.Component {
+  state = { isOpen: false };
+  openModal = () => this.setState({ isOpen: true });
+  closeModal = () => this.setState({ isOpen: false });
+
   render() {
     const jumbotronStyle = { textAlign: 'center'};
     const arrayInfo = (_.groupBy(donations, 'group'));
     const donationsImageStyle = {  height: 'auto', right: '0%' };
+
     return (
         <div className='donate'>
             <Container><h1 className='scholarHeader'> DONATIONS</h1></Container>
@@ -22,14 +29,36 @@ class Donate extends React.Component {
                     <div class="overlay">
                         <h2>Will you help a Rough Rider make it to the endzone?</h2>
                         <p>
-                          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" >
-                            <input type="hidden" name="cmd" value="_donations" />
-                            <input type="hidden" name="business" value="rafhawaii@gmail.com"/>
-                            <input type="hidden" name="item_name" value="Roosevelt Alumni Association Donation" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <button type="submit" class="btn btn-primary btn-lg">Donate Here</button>
-                          </form>
+                          <button variant='primary' onClick={this.openModal} class="btn btn-primary btn-lg">
+                            Learn More
+                          </button>
+                          <Modal show={this.state.isOpen} onHide={this.closeModal} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+                            <Modal.Header closeButton>
+                              <Modal.Title>Will you support our Rough Rider Ohana?</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>
+                              <Image class="img-responsive" src={PhotoPresMessage} style={{width: '30%', float: 'left', marginRight: '1em'}}/>
+                              Your donation will directly impact RHS students and alumni. Help to set them up for success through our scholarships, campus improvement projects, and grants to support classrooms.
+                              <br/>Donations to Roosevelt Alumni Foundation (RAF) are processed via PayPal using the red donate button below.
+                              <br/>All donations to RAF and Friends of Roosevelt Project Grad are tax deductible.
+                              <br/>Thank you for helping out a Rough Rider!
+                              <br/><b>Garrett Ogawa</b> | RHSAA President
+                            </Modal.Body>
+                            <Modal.Footer>
+                              <button variant='secondary' onClick={this.closeModal} class="btn btn-primary btn-lg" style={{backgroundColor:'gray'}}>
+                                Later
+                              </button>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" >
+                                <input type="hidden" name="cmd" value="_donations" />
+                                <input type="hidden" name="business" value="rafhawaii@gmail.com"/>
+                                <input type="hidden" name="item_name" value="Roosevelt Alumni Association Donation" />
+                                <input type="hidden" name="currency_code" value="USD" />
+                                <button type="submit" class="btn btn-primary btn-lg" variant='primary' onClick={this.closeModal}>Donate</button>
+                                </form>
+                            </Modal.Footer>
+                          </Modal>
                         </p>
+                        
                     </div>
               </div>
             <Jumbotron style={{backgroundColor: '#212529', marginBottom: '0', borderRadius: '0'}}>
