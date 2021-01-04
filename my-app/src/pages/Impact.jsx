@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style.css';
-import RooseveltFront from '../images/RooseveltFront.jpg';
-import { Container, Jumbotron, Row, Col, Image } from 'react-bootstrap';
+import dinnerPhoto from '../images/hoolauDinner.jpg';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
 class Impact extends React.Component {
 
@@ -21,32 +21,41 @@ class Impact extends React.Component {
                 <h1 className="impactSubheaders">Get Involved</h1>
                 <hr className="yellowHr"/>
                 <p className="mt-4">
-                  Membership <br/>
-                  Events <br/>
-                  Donate
+                  <a href="/members">Membership</a><br/>
+                  <a href="/events">Events</a><br/>
+                  <a href="/donate">Donate</a><br/>
                 </p>
               </Col>
               <Col className="impactYellowBox mt-5 p-5" sm="8">
                 <h1 className="impactSubheaders">Origins</h1>
                 <hr className="redHr"/>
                 <p className="mt-4">The Roosevelt High School Alumni Association ("RHSAA") was originally chartered in
-                  1975 as Rough Riders
-                  - Hawaii. In 1979, the name was officially changed to RHSAA. In 1993, the Roosevelt Alumni Foundation
-                  ("RAF") was formed and obtained a non-profit designation - 501c(3), from the Internal Revenue Service
-                  in
-                  1996, making all donations to the RAF tax deductible.</p>
+                  1975 as Rough Riders - Hawaii. In 1979, the name was officially changed to RHSAA. In 1993, the
+                  Roosevelt Alumni Foundation ("RAF") was formed and obtained a non-profit designation - 501c(3), from
+                  the Internal Revenue Service in 1996, making all donations to the RAF tax deductible.</p>
               </Col>
             </Row>
           </Container>
 
           <Container className="p-3 mt-5">
-            <h1 className="impactSubheaders">Fellowship</h1>
-            <p className="lead">The Roosevelt High School Alumni Association (RHSAA) works toward developing a spirit of fellowship among
-              its members in order to rekindle and strengthen ties to our alma mater and each other by publishing
-              newsletters for its members and co-hosting with the RAF an annual ho’olaule’a – a get together for
-              alumni.</p>
+            <Row>
+              <Col sm="5">
+                <Image src={dinnerPhoto} fluid/>
+              </Col>
+              <Col sm="7" className="mt-3">
+                <h1 className="impactSubheaders">Fellowship</h1>
+                <hr className="yellowHr"/>
+                <p className="mt-4">The Roosevelt High School Alumni Association (RHSAA) works toward developing a
+                  spirit of fellowship among
+                  its members in order to rekindle and strengthen ties to our alma mater and each other by publishing
+                  newsletters for its members and co-hosting with the RAF an annual ho’olaule’a – a get together for
+                  alumni.</p>
+              </Col>
+            </Row>
+
             <h1 className="impactSubheaders" style={{ marginTop: 50 }}>Scholarship</h1>
-            <p className="lead">
+            <hr className="redHr"/>
+            <p className="mt-4">
               The purpose of the RAF’s scholarship program is to provide financial aid to graduates of Roosevelt
               High School who demonstrate ability, desire and have a financial need to pursue academic, trade or
               vocational school goals in Hawaii.
@@ -57,7 +66,8 @@ class Impact extends React.Component {
             </p>
 
             <h1 className='impactSubheaders'>Contact</h1>
-            <p className="lead" style={{ marginBottom: 50 }}>
+            <hr className="yellowHr"/>
+            <p className="mt-4" style={{ marginBottom: 50 }}>
               If you want to subscribe to our newsletter or share information about your class/classmates, please
               download the membership application below and join the RHSAA. E-mail your favorite memories at Roosevelt
               to our Newsletter Editor- Pualani Good '60 at: rhsaa.hawaii@gmail.com
