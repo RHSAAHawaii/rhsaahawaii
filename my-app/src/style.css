@@ -6,7 +6,7 @@
 }
 
 .backgroundStyle {
-  background-color: #f3e3c0;
+  /*background-color: #f3e3c0;*/
 }
 
 #footer{
@@ -17,7 +17,6 @@
 .footerText{
   margin-bottom: 0 ;
 }
-
 
 .whiteText{
   color: whitesmoke !important;
@@ -43,10 +42,6 @@ body{
   font-family: "Lato", sans-serif;
 }
 
-.impactHeaderBackground{
-  /*background-color: #f8f9fa;*/
-}
-
 .impactDonationImage{
   display: block;
   margin-left: auto;
@@ -59,6 +54,44 @@ body{
 .rooseveltFront {
   background: url("../src/images/RooseveltFront.jpg") no-repeat center;
   background-size: cover;
+  height: 500px;
+}
+
+.impactTransparentTitleBox {
+  /*opacity: .5;*/
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  font-family: 'Domine', serif;
+}
+
+.impactYellowBox {
+  background-color: #FFD677;
+}
+
+.impactRedInvolvedBox {
+  background-color: #AD0000;
+}
+
+.redHr {
+  border-color: #cb0713;
+  border-width: 3px;
+  width: 50%;
+  margin: 0;
+}
+
+.yellowHr {
+  border-color: #f8b416;
+  border-width: 3px;
+  width: 30%;
+  margin: 0;
+}
+
+.impactSubheaders {
+  font-family: 'Domine', serif;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 2s;
 }
 
 /*Scholarships Page*/
@@ -71,7 +104,7 @@ body{
 }
 .scholarSubHeader {
   font-family: 'Domine', serif;
-  color: #cb0713;
+  color: #670007;
 }
 
 .containerOpa {
