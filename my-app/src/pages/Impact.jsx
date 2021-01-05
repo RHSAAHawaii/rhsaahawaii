@@ -17,7 +17,7 @@ class Impact extends React.Component {
 
           <Container className="mt-4">
             <Row>
-              <Col data-aos="fade-right" sm="3" className="bg-light mr-4 p-5">
+              <Col data-aos="fade-right" sm="3" className="mr-4 p-5">
                 <h3 className="impactSubheaders">Get Involved</h3>
                 <hr className="yellowHr"/>
                 <p className="mt-4">
