@@ -40,15 +40,15 @@ class Impact extends React.Component {
               <Col sm="6" data-aos="fade-right">
                 <Image src={dinnerPhoto} alt="Dinner Photo" fluid/>
               </Col>
-                <Col sm="6" className="mt-4" data-aos="fade-left">
-                  <h1 className="impactSubheaders">Fellowship</h1>
-                  <hr className="yellowHr"/>
-                  <p className="mt-4">The Roosevelt High School Alumni Association (RHSAA) works toward developing a
-                    spirit of fellowship among
-                    its members in order to rekindle and strengthen ties to our alma mater and each other by publishing
-                    newsletters for its members and co-hosting with the RAF an annual ho’olaule’a – a get together for
-                    alumni.</p>
-                </Col>
+              <Col sm="6" className="mt-4" data-aos="fade-left">
+                <h1 className="impactSubheaders">Fellowship</h1>
+                <hr className="yellowHr"/>
+                <p className="mt-4">The Roosevelt High School Alumni Association (RHSAA) works toward developing a
+                  spirit of fellowship among
+                  its members in order to rekindle and strengthen ties to our alma mater and each other by publishing
+                  newsletters for its members and co-hosting with the RAF an annual ho’olaule’a – a get together for
+                  alumni.</p>
+              </Col>
             </Row>
 
             <div data-aos="fade-up">
@@ -58,6 +58,12 @@ class Impact extends React.Component {
                 The purpose of the RAF’s scholarship program is to provide financial aid to graduates of Roosevelt
                 High School who demonstrate ability, desire and have a financial need to pursue academic, trade or
                 vocational school goals in Hawaii.
+                In addition to offering scholarships to RHS graduates, the RAF also provides support to Roosevelt High
+                School by providing grants to support the school. Our projects include campus beautification and other
+                needs. The RAF adopted the Friends of Roosevelt Project Grad (“FRPG”) in 2007. As the group’s fiscal
+                sponsor, all donations to FRPG, are also tax deductible.
+              </p>
+              <p>
                 In addition to offering scholarships to RHS graduates, the RAF also provides support to Roosevelt High
                 School by providing grants to support the school. Our projects include campus beautification and other
                 needs. The RAF adopted the Friends of Roosevelt Project Grad (“FRPG”) in 2007. As the group’s fiscal
