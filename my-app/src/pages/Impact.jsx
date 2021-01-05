@@ -17,7 +17,7 @@ class Impact extends React.Component {
 
           <Container className="mt-4">
             <Row>
-              <Col data-aos="fade-right" sm="3" className="mr-4 p-5">
+              <Col data-aos="fade-right" sm="3" className="p-5">
                 <h3 className="impactSubheaders">Get Involved</h3>
                 <hr className="yellowHr"/>
                 <p className="mt-4">
@@ -26,7 +26,7 @@ class Impact extends React.Component {
                   <a href="/donate">Donate</a><br/>
                 </p>
               </Col>
-              <Col data-aos="fade-left" sm="8" className="impactYellowBox ml-2 p-5">
+              <Col data-aos="fade-left" sm="9" className="impactYellowBox p-5">
                 <h1 className="impactSubheaders">Origins</h1>
                 <hr className="redHr"/>
                 <p className="mt-4">The Roosevelt High School Alumni Association ("RHSAA") was originally chartered in
