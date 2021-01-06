@@ -75,14 +75,15 @@ body{
 .redHr {
   border-color: #cb0713;
   border-width: 3px;
-  width: 50%;
+  /*width: 50%;*/
+  width: auto;
   margin: 0;
 }
 
 .yellowHr {
   border-color: #f8b416;
   border-width: 3px;
-  width: 30%;
+  width: auto;
   margin: 0;
 }
 
