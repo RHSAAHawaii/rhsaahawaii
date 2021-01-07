@@ -13,43 +13,38 @@ import {
   Image,
   Row,
   Col,
-  Jumbotron,
   Carousel
 } from 'react-bootstrap';
 
 class Scholarships extends React.Component {
   render() {
     const arrayInfo = (_.groupBy(scholars, 'Class'));
-    const subHeaders = { textAlign: "center" };
 
     return (
-        <div>
-          <Container><h1 className="scholarHeader">SCHOLARSHIPS</h1></Container>
-          <Jumbotron>
-            <Container>
-              <Row>
-                <Col className="col-7">
-                  <p style={{fontSize: 20}}>We seek to provide financial aid to
-                    graduates of Roosevelt High School
-                    who demonstrate the ability, desire,
-                    and have a financial need to be met in order to pursue academic, trade or vocational
-                    school goals.
-                  </p>
-                  <br/>
-                  <p style={{fontSize: 20}}>The Roosevelt Alumni Foundation has contributed over $70,000 in
-                    scholarships to both hard-working and
-                    need-based students (not necessarily determined by federal guidelines).
-                  </p>
-                </Col>
-                <Col className="col-5"><Image rounded width='100%' src={scholarshipPhoto}/></Col>
-              </Row>
-            </Container>
-          </Jumbotron>
-          <Container style={{ marginBottom: 25 }}>
+          <Container className="mb-5">
+            <h1 className="scholarHeader">SCHOLARSHIPS</h1>
             <Row>
-              <Col className="col-4">
-                <h2 style={subHeaders}>Recent Recipients</h2>
-                <Carousel>
+              <Col sm="6" className="p-4 align-items-center" data-aos="fade-right">
+                <p className="lead mt-5">We seek to provide financial aid to
+                  graduates of Roosevelt High School
+                  who demonstrate the ability, desire,
+                  and have a financial need to be met in order to pursue academic, trade or vocational
+                  school goals.
+                </p>
+                <br/>
+                <p className="lead">The Roosevelt Alumni Foundation has contributed over $70,000 in
+                  scholarships to both hard-working and
+                  need-based students (not necessarily determined by federal guidelines)!
+                </p>
+              </Col>
+              <Col sm="6"><Image data-aos="zoom-in" roundedCircle fluid src={scholarshipPhoto}/></Col>
+            </Row>
+
+            <Row style={{marginTop: "15rem"}}>
+              <Col sm="4" className="mt-5" data-aos="flip-up">
+                <h2 className="impactSubheaders">Recent Recipients</h2>
+                <hr className="yellowHr"/>
+                <Carousel className="mt-5">
                   <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -82,9 +77,10 @@ class Scholarships extends React.Component {
                   </Carousel.Item>
                 </Carousel>
               </Col>
-              <Col className="col-8">
-                <h2 style={subHeaders}>Scholarship Requirements</h2>
-                <ul style={{fontSize: 16}}>
+              <Col data-aos="flip-down" sm="8">
+                <h2 className="impactSubheaders mt-5">Requirements</h2>
+                <hr className="redHr"/>
+                <ul className="lead mt-3">
                   <li>Be cool</li>
                   <br/>
                   <li>Stay in school</li>
@@ -97,13 +93,14 @@ class Scholarships extends React.Component {
                 </ul>
               </Col>
             </Row>
-            <h2 style={{ marginTop: 50 }}>Past Scholarship Winners</h2>
-            <Accordion defaultActiveKey='0'>
+            <h2 className="impactSubheaders text-center" style={{marginTop: "10rem"}}>Past Scholarship Winners</h2>
+            <hr className="yellowHr"/>
+            <Accordion defaultActiveKey='0' className="mt-5">
               {_.map(arrayInfo, (current, index) => <ScholarAccord classInfo={index}
                                                                    scholarInfo={current}/>).reverse()}
             </Accordion>
           </Container>
-        </div>
+
     )
   }
 }
