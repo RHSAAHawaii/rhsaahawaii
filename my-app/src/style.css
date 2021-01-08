@@ -95,6 +95,10 @@ body{
   --animate-duration: 2s;
 }
 
+.list-group-item-action:focus, .list-group-item-action:hover {
+  background-color: #FFD677 !important;
+}
+
 /*Scholarships Page*/
 .scholarHeader {
   font-size: 3em;

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style.css';
 import dinnerPhoto from '../images/hoolauDinner.jpg';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
 
 class Impact extends React.Component {
 
@@ -20,11 +20,11 @@ class Impact extends React.Component {
               <Col data-aos="fade-right" md="4" sm="12" className="p-5">
                 <h1 className="impactSubheaders">Get Involved</h1>
                 <hr className="yellowHr"/>
-                <p className="mt-4">
-                  <a href="/members">Membership</a><br/>
-                  <a href="/events">Events</a><br/>
-                  <a href="/donate">Donate</a><br/>
-                </p>
+                <ListGroup variant="flush">
+                  <ListGroup.Item action href={"/members"}>Membership</ListGroup.Item>
+                  <ListGroup.Item action href={"/events"}>Events</ListGroup.Item>
+                  <ListGroup.Item action href={"/donate"}>Donate</ListGroup.Item>
+                </ListGroup>
               </Col>
               <Col data-aos="fade-left" md="8" sm="12" className="impactYellowBox p-5">
                 <h1 className="impactSubheaders">Origins</h1>
